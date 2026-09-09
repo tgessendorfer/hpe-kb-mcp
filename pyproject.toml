@@ -1,0 +1,16 @@
+[project]
+name = "hpe-kb-mcp"
+version = "0.1.0"
+description = "MCP server that reads HPE Support Center documents, for HPE Morpheus AI agents"
+requires-python = ">=3.10"
+dependencies = ["mcp>=2.0,<3"]
+
+[project.scripts]
+hpe-kb-mcp = "hpe_kb_mcp.server:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["hpe_kb_mcp"]

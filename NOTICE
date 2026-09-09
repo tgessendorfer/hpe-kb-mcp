@@ -1,0 +1,20 @@
+HPE Knowledgebase MCP server
+Copyright 2026 Thomas Gessendorfer
+
+This product is licensed under the Apache License, Version 2.0 (the "License").
+You may obtain a copy of the License in the accompanying LICENSE file or at:
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+--------------------------------------------------------------------------------
+Trademarks
+--------------------------------------------------------------------------------
+
+HPE, Hewlett Packard Enterprise and Morpheus are trademarks of Hewlett Packard
+Enterprise Development LP. Model Context Protocol is a trademark of Anthropic,
+PBC. This is an independent community project, neither endorsed by nor
+affiliated with either company.
+
+This software reads documents that HPE publishes to the public internet through
+its own documentation API. It contains no HPE documentation, no HPE source code
+and no credentials.
