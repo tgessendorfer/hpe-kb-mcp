@@ -26,9 +26,16 @@ import argparse
 import os
 
 from mcp.server.mcpserver import MCPServer
+from mcp.types import ToolAnnotations
 
 from .client import AuthenticationRequired, HpeKbClient, HpeKbError, normalise_doc_id
 from .releases import latest_release
+
+# Every tool here only reads. Morpheus agents in read-only mode refuse to execute
+# an external tool that does not say so - the tool loads, then fails at call time
+# with "Write operations are disabled for this agent" - so declare it explicitly.
+# `open_world_hint` because these reach support.hpe.com rather than a closed set.
+READ_ONLY = ToolAnnotations(read_only_hint=True, open_world_hint=True)
 
 mcp = MCPServer(
     name="hpe-kb",
@@ -58,7 +65,7 @@ def client() -> HpeKbClient:
     return _client
 
 
-@mcp.tool()
+@mcp.tool(annotations=READ_ONLY)
 def get_hpe_document(
     document: str,
     page: str | None = None,
@@ -106,7 +113,7 @@ def get_hpe_document(
     return result
 
 
-@mcp.tool()
+@mcp.tool(annotations=READ_ONLY)
 def list_hpe_document_topics(document: str) -> dict:
     """List the topics (table of contents) of an HPE document.
 
@@ -128,7 +135,7 @@ def list_hpe_document_topics(document: str) -> dict:
     }
 
 
-@mcp.tool()
+@mcp.tool(annotations=READ_ONLY)
 def search_hpe_kb(query: str, max_results: int = 10) -> dict:
     """Search the HPE Support Center knowledgebase by keyword.
 
@@ -152,7 +159,7 @@ def search_hpe_kb(query: str, max_results: int = 10) -> dict:
     return {"query": query, "results": results}
 
 
-@mcp.tool()
+@mcp.tool(annotations=READ_ONLY)
 def get_latest_morpheus_release(product: str = "morpheus-enterprise") -> dict:
     """Report the newest HPE Morpheus release this server knows about.
 

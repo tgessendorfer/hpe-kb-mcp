@@ -91,9 +91,28 @@ Known limits, all deliberate and documented in the README:
   sequential and the prefix changes between releases (`sd00008269` → `dp00008463`),
   so a new release needs an entry via `HPE_KB_DOCUMENTS`. Nothing guesses a URL pattern.
 - `search_hpe_kb` returns `authentication_required` without a cookie, by design.
+- **Read-only agents cannot call it.** Morpheus 9.0.1 treats every external MCP tool
+  as a write, so a read-only agent loads these tools and then fails every call with
+  `Write operations are disabled for this agent (read-only mode)`. All four tools
+  declare `ToolAnnotations(read_only_hint=True, open_world_hint=True)` and 9.0.1
+  ignores it; keep the annotations, since they are spec-correct and a later release
+  honouring them would fix this. Uncheck *Read-only mode* on the agent.
 
-Not yet done: registering it in Morpheus under *Tools > AI Services > MCP Servers*
-and attaching it to an Agent. No packaging beyond `pip install -e .`, no CI.
+Registered and verified on the `morph-ent` appliance (9.0.1) on 2026-09-09: an agent
+asked a cold question chose the tool itself and answered 9.0.2 / August 2026 /
+`dp00008463en_us`, with the configured-list caveat passed through to the user.
+
+Two things about Morpheus that cost a long debugging detour, both now in the README:
+external MCP tools are **not** placed in the model's prompt — they are reached through
+`search_external_tools` / `load_external_tools` and renamed `external__<id>__<tool>`,
+so asking an agent "do you have `get_hpe_document`?" answers **no** even when
+everything works. And the appliance log is `/var/log/morpheus/morpheus-ui/current`
+(runit/svlogd, not `morpheus-ui.log`); grep it for `AiChatService` for the real reason
+a tool call failed.
+
+Not yet done: no packaging beyond `pip install -e .`, no CI. The server currently runs
+on a laptop on the same LAN as the appliance, which is a test rig, not a deployment —
+the README's systemd unit is the intended home.
 
 ## Companion project
 
