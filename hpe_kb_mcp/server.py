@@ -28,6 +28,7 @@ import os
 from mcp.server.mcpserver import MCPServer
 from mcp.types import ToolAnnotations
 
+from . import __version__
 from .client import AuthenticationRequired, HpeKbClient, HpeKbError, normalise_doc_id
 from .releases import latest_release
 
@@ -39,6 +40,7 @@ READ_ONLY = ToolAnnotations(read_only_hint=True, open_world_hint=True)
 
 mcp = MCPServer(
     name="hpe-kb",
+    version=__version__,
     instructions=(
         "Reads documents from the HPE Support Center knowledgebase.\n\n"
         "Use these tools instead of fetching support.hpe.com URLs directly: the "
