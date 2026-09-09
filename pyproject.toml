@@ -1,6 +1,6 @@
 [project]
 name = "hpe-kb-mcp"
-version = "0.1.0"
+dynamic = ["version"]
 description = "MCP server that reads HPE Support Center documents, for HPE Morpheus AI agents"
 requires-python = ">=3.10"
 dependencies = ["mcp>=2.0,<3"]
@@ -14,3 +14,8 @@ build-backend = "setuptools.build_meta"
 
 [tool.setuptools]
 packages = ["hpe_kb_mcp"]
+
+# Single source of truth: hpe_kb_mcp/__version__, which the server also reports
+# in its `initialize` response.
+[tool.setuptools.dynamic]
+version = {attr = "hpe_kb_mcp.__version__"}

@@ -110,9 +110,20 @@ everything works. And the appliance log is `/var/log/morpheus/morpheus-ui/curren
 (runit/svlogd, not `morpheus-ui.log`); grep it for `AiChatService` for the real reason
 a tool call failed.
 
-Not yet done: no packaging beyond `pip install -e .`, no CI. The server currently runs
-on a laptop on the same LAN as the appliance, which is a test rig, not a deployment —
-the README's systemd unit is the intended home.
+Deployed as a systemd service on a Rocky 9 VM (`rocky9`, 192.168.0.31) beside the
+appliance, from `/opt/hpe-kb-mcp` on python3.12 — Rocky's stock python3 is 3.9, under
+the `>=3.10` floor. To ship a change: `sudo git -C /opt/hpe-kb-mcp pull && sudo
+systemctl restart hpe-kb-mcp`. The VM tracks GitHub, so an uncommitted working copy
+does not reach it.
+
+CI runs the offline suite on 3.10/3.12/3.13 (`.github/workflows/tests.yml`); it needs
+no secrets, because the tests never touch the network.
+
+`__version__` in `hpe_kb_mcp/__init__.py` is the single source of the version — the
+server reports it as `serverInfo.version` and `pyproject.toml` reads it from there, so
+bump that one line and everything follows.
+
+Not yet done: no packaging beyond `pip install -e .` (no wheel on PyPI).
 
 ## Companion project
 

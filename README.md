@@ -1,5 +1,7 @@
 # HPE Knowledgebase MCP server
 
+[![tests](https://github.com/tgessendorfer/hpe-kb-mcp/actions/workflows/tests.yml/badge.svg)](https://github.com/tgessendorfer/hpe-kb-mcp/actions/workflows/tests.yml)
+
 An MCP server that reads **HPE Support Center documents** and hands them to an
 LLM agent as text. Built for HPE Morpheus Enterprise Agents, but it is a plain
 MCP server and works with any client.
@@ -174,4 +176,11 @@ appliance or on it.
 ```
 
 Offline: the fixtures mimic the *shape* of HPE's payloads, not their content, so
-the suite needs no network and carries none of HPE's documentation.
+the suite needs no network and carries none of HPE's documentation. That is also
+why CI needs no secrets — GitHub Actions runs the same command on 3.10, 3.12 and
+3.13 on every push and pull request.
+
+`tests/test_server.py` covers what the appliance actually reads: that every tool
+is annotated read-only, that each carries a description, and that the server
+reports a version. A tool added without those would pass every other test and
+fail only once it reached Morpheus.
