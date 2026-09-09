@@ -63,14 +63,24 @@ newer document with web search and read it with `get_hpe_document`.
 ## Install and run
 
 ```bash
-python3 -m venv .venv
-./.venv/bin/pip install -e .
+pip install hpe-kb-mcp
 
 # For Morpheus (network-reachable):
-./.venv/bin/python -m hpe_kb_mcp.server --transport streamable-http --host 0.0.0.0 --port 8081
+hpe-kb-mcp --transport streamable-http --host 0.0.0.0 --port 8081
 # For local testing with a stdio client:
+hpe-kb-mcp --transport stdio
+```
+
+Or from a checkout, which is what you want if you are changing it:
+
+```bash
+python3 -m venv .venv
+./.venv/bin/pip install -e .
 ./.venv/bin/python -m hpe_kb_mcp.server --transport stdio
 ```
+
+`hpe-kb-mcp` and `python -m hpe_kb_mcp.server` are the same entry point and take
+the same flags.
 
 | Flag / variable | Default | Notes |
 |---|---|---|
@@ -184,3 +194,19 @@ why CI needs no secrets — GitHub Actions runs the same command on 3.10, 3.12 a
 is annotated read-only, that each carries a description, and that the server
 reports a version. A tool added without those would pass every other test and
 fail only once it reached Morpheus.
+
+## Releasing
+
+`__version__` in `hpe_kb_mcp/__init__.py` is the single source — `pyproject.toml`
+reads it, and the server reports it as `serverInfo.version`. Bump that one line,
+commit, then:
+
+```bash
+git tag v0.1.0 && git push origin v0.1.0
+```
+
+The `release` workflow builds an sdist and a wheel and publishes to PyPI through
+[Trusted Publishing](https://docs.pypi.org/trusted-publishers/), so no API token
+lives in this repository. It refuses to publish if the tag and `__version__`
+disagree — PyPI never allows a version to be re-uploaded, so that mistake is not
+recoverable.

@@ -123,7 +123,13 @@ no secrets, because the tests never touch the network.
 server reports it as `serverInfo.version` and `pyproject.toml` reads it from there, so
 bump that one line and everything follows.
 
-Not yet done: no packaging beyond `pip install -e .` (no wheel on PyPI).
+Packaged for PyPI as `hpe-kb-mcp` with a `hpe-kb-mcp` console script. Releases go out
+by pushing a `v*` tag: `.github/workflows/release.yml` builds and publishes through
+PyPI Trusted Publishing, so **no API token is in the repo or its secrets**. The
+workflow refuses to publish when the tag and `__version__` disagree, because PyPI
+never allows a version to be re-uploaded. The one-time PyPI-side setup (publisher:
+owner `tgessendorfer`, repo `hpe-kb-mcp`, workflow `release.yml`, environment `pypi`)
+has to be done in the PyPI project settings before the first tag.
 
 ## Companion project
 

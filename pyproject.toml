@@ -2,14 +2,39 @@
 name = "hpe-kb-mcp"
 dynamic = ["version"]
 description = "MCP server that reads HPE Support Center documents, for HPE Morpheus AI agents"
+readme = "README.md"
 requires-python = ">=3.10"
 dependencies = ["mcp>=2.0,<3"]
+authors = [{name = "Thomas Gessendorfer"}]
+license = "Apache-2.0"
+license-files = ["LICENSE", "NOTICE"]
+keywords = ["mcp", "model-context-protocol", "hpe", "morpheus", "knowledgebase",
+            "documentation", "llm", "agent"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: System Administrators",
+  "Intended Audience :: Developers",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Documentation",
+  "Topic :: System :: Systems Administration",
+]
+
+[project.urls]
+Homepage = "https://github.com/tgessendorfer/hpe-kb-mcp"
+Repository = "https://github.com/tgessendorfer/hpe-kb-mcp"
+Issues = "https://github.com/tgessendorfer/hpe-kb-mcp/issues"
 
 [project.scripts]
 hpe-kb-mcp = "hpe_kb_mcp.server:main"
 
+# setuptools >= 77 for the PEP 639 `license` expression above.
 [build-system]
-requires = ["setuptools>=68"]
+requires = ["setuptools>=77"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools]
