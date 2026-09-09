@@ -112,14 +112,43 @@ WantedBy=multi-user.target
    (`http://<host>:8081/mcp`).
 2. **Tools > AI Services > Agents** → edit the agent and add it alongside
    `Morpheus (Built-in)`.
-3. Start a **new** conversation — an existing one keeps the tool catalog it
+3. Leave **Read-only mode** unchecked on the agent — see below.
+4. Start a **new** conversation — an existing one keeps the tool catalog it
    opened with.
+
+> **Read-only agents cannot call external tools.** Verified against Morpheus
+> 9.0.1: an agent with *Read-only mode* checked discovers and loads these tools
+> happily, then fails every call with
+> `Write operations are disabled for this agent (read-only mode)`. Morpheus
+> classifies every external MCP tool as a write. Declaring the tools read-only
+> does not help — they all carry `readOnlyHint`, and 9.0.1 ignores it. The
+> setting only ever guarded Morpheus's *own* write tools, so unchecking it
+> exposes nothing about this server, whose four tools are GETs against
+> `support.hpe.com`. To keep that guard, run two agents: a read-only one
+> without this server, and a documentation one with it.
+
+Do not verify a registration by asking the agent whether it has
+`get_hpe_document` — it will say no even when everything works. Morpheus does
+not put external tools in the model's prompt; it exposes them through
+`search_external_tools` and `load_external_tools`, and renames them
+`external__<id>__<tool>`. Ask it to run `search_external_tools` instead. Nothing
+reaches this server between registration and the first real call, so a quiet
+access log is expected.
 
 Worth adding to the agent's system prompt, since it steers the split cleanly:
 
 > For questions about HPE product releases, documentation or known issues, use
 > the HPE knowledgebase tools. Use the Morpheus tools for what is actually
 > deployed on this appliance. Never state a release version from memory.
+> When citing a document, print its full URL as plain text on its own line —
+> not markdown link syntax, and not the bare document id.
+
+That last line is a workaround for the chat UI, which renders neither markdown
+links nor bare URLs as anchors (Morpheus 9.0.1). Nothing here can produce a
+clickable link; a full URL is at least selectable in one go, where a bare
+`dp00008463en_us` leaves the reader to assemble it. Drop the line if a later
+release renders markdown — the tools already return a `url` field, so proper
+links come back for free.
 
 The appliance must be able to reach this server. Runs happily next to the
 appliance or on it.
