@@ -37,7 +37,7 @@ own web search finds the `docId`, this server reads the document.
 |---|---|
 | `get_hpe_document(document, page=None, include_all_topics=False)` | Reads a document as text. Takes a bare `docId` **or any URL containing one**, so a pasted browser link works. Multi-page documents return their topic list first; pass a `page`, or `include_all_topics=true`. |
 | `list_hpe_document_topics(document)` | Table of contents only — cheap when you want just "Fixes". |
-| `search_hpe_kb(query)` | Keyword search. Requires `HPE_SESSION_COOKIE`; without it returns `authentication_required` and tells the model to use web search instead. |
+| `search_hpe_kb(query)` | Keyword search. Requires `HPE_SESSION_COOKIE`; without it returns `authentication_required` and tells the model to find the `docId` with one narrow web search on support.hpe.com, without web-fetching HPE pages. |
 | `get_latest_morpheus_release(product)` | Newest release this server knows about, with version, month and link. |
 
 ### About `get_latest_morpheus_release`
@@ -58,7 +58,7 @@ Point `HPE_KB_DOCUMENTS` at your own JSON file to extend it:
 Document ids are not sequential and the prefix changes between releases
 (`sd…` then `dp…`), so a new release means a new entry — nothing here guesses a
 URL pattern. The tool says so in its own output, and the agent can always find a
-newer document with web search and read it with `get_hpe_document`.
+newer document id with one narrow web search and read it with `get_hpe_document`.
 
 ## Install and run
 

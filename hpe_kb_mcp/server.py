@@ -143,9 +143,11 @@ def search_hpe_kb(query: str, max_results: int = 10) -> dict:
 
     Requires a signed-in HPE account: HPE serves documents anonymously but
     gates search behind a login. If this returns `authentication_required`,
-    find the document with your own web search instead - HPE documents are
-    indexed publicly, and search results carry the `docId=...` you need - then
-    read it properly with `get_hpe_document`.
+    run one narrow web search restricted to support.hpe.com only to find the
+    `docId=...` (search results carry it), then read the document with
+    `get_hpe_document`. Do not web-fetch support.hpe.com pages: the viewer
+    returns navigation, not document text. For one section, call
+    `list_hpe_document_topics` first and read only that topic.
     """
     try:
         results = client().search(query, max_results=max_results)
@@ -153,8 +155,9 @@ def search_hpe_kb(query: str, max_results: int = 10) -> dict:
         return {
             "error": "authentication_required",
             "detail": str(exc),
-            "suggestion": ("Use your own web search restricted to support.hpe.com to find "
-                           "the docId, then call get_hpe_document with it."),
+            "suggestion": ("Run one narrow web search restricted to support.hpe.com to find "
+                           "the docId, then call get_hpe_document with it. Do not web-fetch "
+                           "support.hpe.com pages; they return navigation, not the document."),
         }
     except (HpeKbError, ValueError) as exc:
         return {"error": "unavailable", "detail": str(exc)}
@@ -170,9 +173,11 @@ def get_latest_morpheus_release(product: str = "morpheus-enterprise") -> dict:
 
     Important: this reflects the documents the server has been told about, not
     a live query of everything HPE has published - HPE has no anonymous search
-    API. If you have reason to think a newer release exists, find its release
-    notes with your own web search and read it with `get_hpe_document`; the
-    appliance's own build version comes from the Morpheus tools, not this one.
+    API. Only if you have a concrete reason to think a newer release exists,
+    run one narrow web search restricted to support.hpe.com for its release
+    notes `docId` and read them with `get_hpe_document` - do not web-fetch HPE
+    pages. The appliance's own build version comes from the Morpheus tools,
+    not this one.
 
     `product` is `morpheus-enterprise` or `morpheus-vm-essentials`.
     """
