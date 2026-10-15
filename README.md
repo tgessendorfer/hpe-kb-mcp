@@ -28,8 +28,9 @@ documents as HTML and JSON. This server talks to it.
 | `GET /hpesc/public/api/document/{docId}/search?q=…` | **needs a signed-in HPE account** |
 
 The asymmetry is the thing to understand: HPE serves documents anonymously but
-gates *search* behind a login. So discovery and retrieval are split — the agent's
-own web search finds the `docId`, this server reads the document.
+gates *search* behind a login. So discovery and retrieval are split — a local
+document catalog (`find_hpe_document`, if you configure one) or the agent's own
+web search finds the `docId`, and this server reads the document.
 
 ## Tools
 
@@ -38,7 +39,34 @@ own web search finds the `docId`, this server reads the document.
 | `get_hpe_document(document, page=None, include_all_topics=False)` | Reads a document as text. Takes a bare `docId` **or any URL containing one**, so a pasted browser link works. Multi-page documents return their topic list first; pass a `page`, or `include_all_topics=true`. |
 | `list_hpe_document_topics(document)` | Table of contents only — cheap when you want just "Fixes". |
 | `search_hpe_kb(query)` | Keyword search. Requires `HPE_SESSION_COOKIE`; without it returns `authentication_required` and tells the model to find the `docId` with one narrow web search on support.hpe.com, without web-fetching HPE pages. |
-| `get_latest_morpheus_release(product)` | Newest release this server knows about, with version, month and link. |
+| `find_hpe_document(query, product=None, kind=None)` | Finds HPE documents by title in a **local catalog** you point `HPE_KB_CATALOG` at, without a login or web search. Returns `doc_id`, title, kind, products, date and link, newest first. Without a catalog it answers `no_catalog`. |
+| `get_latest_morpheus_release(product)` | Newest release this server knows about, with version, month and link. `product`: `morpheus-enterprise`, `morpheus-advanced`, `morpheus-vm-essentials`. |
+
+### About `find_hpe_document`
+
+No catalog ships with this server. Build a JSON file of the documents you care
+about and set `HPE_KB_CATALOG` to its path:
+
+```json
+{
+  "snapshot": "2026-10-15",
+  "documents": [
+    {"doc_id": "sd00008803en_us", "title": "HPE Morpheus Enterprise Software v9.1.0 Release Notes",
+     "kind": "release-notes", "products": ["enterprise"], "date": "2026-10-15"}
+  ]
+}
+```
+
+It holds ids, titles, kinds, products and dates only, never document text;
+`get_hpe_document` reads the text live. One way to fill it is the document list
+of an HPE Support Center product page, which a browser can export; keep only
+public documents, since restricted ones need a signed-in account to read.
+
+Every query word must match the start of a title word (`9.1` finds `v9.1.0`).
+`product` is one of `enterprise`, `advanced`, `vm-essentials`, `all`,
+`cloudops`, `other`; `kind` is one of `release-notes`, `documentation`, `guide`,
+`advisory`, `notice`, `bulletin`, `kb-article`. Documents tagged `all` match any
+product filter. The file is read on every call, so replacing it needs no restart.
 
 ### About `get_latest_morpheus_release`
 
@@ -161,6 +189,18 @@ links come back for free.
 
 The appliance must be able to reach this server. Runs happily next to the
 appliance or on it.
+
+**HPE Morpheus 9.1.0 refuses MCP servers on private addresses.** If this server
+has an RFC1918, IPv6 ULA or CGNAT address, every tool call fails on 9.1.0 with
+`Blocked MCP connection to unsafe destination … Destination resolves to a private
+address` in `/var/log/morpheus/morpheus-ui/current`, while the server still shows
+OK. The switch is the undocumented, appliance-wide setting
+`morpheus.mcp.allowPrivateDestinations`; setting it as a JVM system property
+(`-Dmorpheus.mcp.allowPrivateDestinations=true` in
+`/opt/morpheus/lib/tomcat/bin/setenv.sh`, then restart `morpheus-ui`) worked.
+It opens private destinations for every MCP server on the appliance, so weigh
+that before using it. Loopback stays blocked, so running this server on the
+appliance itself does not work on 9.1.0.
 
 ## Behaviour worth knowing
 
