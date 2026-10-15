@@ -50,14 +50,14 @@ Point `HPE_KB_DOCUMENTS` at your own JSON file to extend it:
 
 ```json
 [
-  {"product": "morpheus-enterprise", "doc_id": "dp00008463en_us"},
-  {"product": "morpheus-enterprise", "doc_id": "sd00008269en_us"}
+  {"product": "morpheus-enterprise", "doc_id": "sd00008803en_us"},
+  {"product": "morpheus-enterprise", "doc_id": "dp00008463en_us"}
 ]
 ```
 
 Document ids are not sequential and the prefix changes between releases
-(`sd…` then `dp…`), so a new release means a new entry — nothing here guesses a
-URL pattern. The tool says so in its own output, and the agent can always find a
+(`sd…`, then `dp…` for 9.0.2, then `sd…` again for 9.1.0), so a new release
+means a new entry — nothing here guesses a URL pattern. The tool says so in its own output, and the agent can always find a
 newer document id with one narrow web search and read it with `get_hpe_document`.
 
 ## Install and run

@@ -33,12 +33,15 @@ from .client import HpeKbClient, HpeKbError
 
 # Seeded from the documents that exist today. A new release means a new entry;
 # nothing here is guessed from a URL pattern, because HPE's document ids are not
-# sequential and the prefix changes between releases (sd... then dp...).
+# sequential and the prefix changes between releases (sd..., dp..., sd... again).
 DEFAULT_DOCUMENTS: list[dict] = [
-    {"product": "morpheus-enterprise", "doc_id": "dp00008463en_us"},
-    {"product": "morpheus-enterprise", "doc_id": "sd00008269en_us"},
-    {"product": "morpheus-enterprise", "doc_id": "sd00006660en_us"},
-    {"product": "morpheus-vm-essentials", "doc_id": "sd00008079en_us"},
+    {"product": "morpheus-enterprise", "doc_id": "sd00008803en_us"},  # 9.1.0
+    {"product": "morpheus-enterprise", "doc_id": "dp00008463en_us"},  # 9.0.2
+    {"product": "morpheus-enterprise", "doc_id": "sd00008269en_us"},  # 9.0.1
+    {"product": "morpheus-enterprise", "doc_id": "sd00006660en_us"},  # 8.0.9
+    {"product": "morpheus-vm-essentials", "doc_id": "dp00008462en_us"},  # 9.0.2
+    {"product": "morpheus-vm-essentials", "doc_id": "sd00008297en_us"},  # 9.0.1
+    {"product": "morpheus-vm-essentials", "doc_id": "sd00008079en_us"},  # 9.0.0
 ]
 
 VERSION_PATTERN = re.compile(r"v?(\d+)\.(\d+)\.(\d+)")
