@@ -23,7 +23,7 @@ from hpe_kb_mcp import __version__
 from hpe_kb_mcp.server import mcp
 
 EXPECTED_TOOLS = {"get_hpe_document", "list_hpe_document_topics",
-                  "search_hpe_kb", "get_latest_morpheus_release"}
+                  "search_hpe_kb", "find_hpe_document", "get_latest_morpheus_release"}
 
 
 def tools():

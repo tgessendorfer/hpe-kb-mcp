@@ -1,0 +1,3048 @@
+{
+ "source": "HPE Support Center, documents tagged HPE Morpheus Software (all editions), English, public only",
+ "snapshot": "2026-10-15",
+ "documents": [
+  {
+   "doc_id": "sd00008805en_us",
+   "title": "HPE Morpheus Essentials Software Release Notes 9.1.0",
+   "kind": "release-notes",
+   "products": [
+    "vm-essentials"
+   ],
+   "date": "2026-10-15"
+  },
+  {
+   "doc_id": "sd00008804en_us",
+   "title": "HPE Morpheus Advanced Software Release Notes 9.1.0",
+   "kind": "release-notes",
+   "products": [
+    "advanced"
+   ],
+   "date": "2026-10-15"
+  },
+  {
+   "doc_id": "sd00008803en_us",
+   "title": "HPE Morpheus Enterprise Software v9.1.0 Release Notes",
+   "kind": "release-notes",
+   "products": [
+    "enterprise"
+   ],
+   "date": "2026-10-15"
+  },
+  {
+   "doc_id": "sd00007650en_us",
+   "title": "HPE Morpheus SDN Plugin User Guide",
+   "kind": "documentation",
+   "products": [
+    "advanced",
+    "enterprise"
+   ],
+   "date": "2026-10-15"
+  },
+  {
+   "doc_id": "dp00008850en_us",
+   "title": "HPE Reference Architecture for 3-Node HA HPE Morpheus Manager Deployment",
+   "kind": "guide",
+   "products": [
+    "enterprise",
+    "vm-essentials"
+   ],
+   "date": "2026-10-15"
+  },
+  {
+   "doc_id": "sd00008821en_us",
+   "title": "HPE Morpheus Central SaaS Release Notes",
+   "kind": "release-notes",
+   "products": [
+    "all"
+   ],
+   "date": "2026-10-14"
+  },
+  {
+   "doc_id": "sd00008820en_us",
+   "title": "HPE Morpheus Central Standalone Release Notes",
+   "kind": "release-notes",
+   "products": [
+    "all"
+   ],
+   "date": "2026-10-14"
+  },
+  {
+   "doc_id": "sd00008815en_us",
+   "title": "HPE Storage Integration Pack for VM Essentials 9.1.0 Release Notes",
+   "kind": "release-notes",
+   "products": [
+    "vm-essentials"
+   ],
+   "date": "2026-10-14"
+  },
+  {
+   "doc_id": "sd00008772en_us",
+   "title": "HPE Morpheus Enterprise Software Documentation v9.1.0",
+   "kind": "documentation",
+   "products": [
+    "enterprise"
+   ],
+   "date": "2026-10-14"
+  },
+  {
+   "doc_id": "sd00008769en_us",
+   "title": "HPE Morpheus VM Essentials Software Documentation v9.1.0",
+   "kind": "documentation",
+   "products": [
+    "vm-essentials"
+   ],
+   "date": "2026-10-14"
+  },
+  {
+   "doc_id": "sd00008095en_us",
+   "title": "HPE Morpheus Central SaaS User Guide",
+   "kind": "documentation",
+   "products": [
+    "advanced",
+    "enterprise",
+    "vm-essentials"
+   ],
+   "date": "2026-10-14"
+  },
+  {
+   "doc_id": "sd00006551en_us",
+   "title": "Qualification Matrix for HVM Clusters Managed by HPE Morpheus Software",
+   "kind": "guide",
+   "products": [
+    "enterprise",
+    "vm-essentials"
+   ],
+   "date": "2026-10-14"
+  },
+  {
+   "doc_id": "dp00008827en_us",
+   "title": "HPE Morpheus Software Alletra Storage MP B10000 Replication Failover",
+   "kind": "guide",
+   "products": [
+    "vm-essentials"
+   ],
+   "date": "2026-10-14"
+  },
+  {
+   "doc_id": "sd00008580en_us",
+   "title": "HPE Morpheus Software STIG Configuration Guide",
+   "kind": "guide",
+   "products": [
+    "all"
+   ],
+   "date": "2026-10-13"
+  },
+  {
+   "doc_id": "sd00008473en_us",
+   "title": "HPE Morpheus Advanced Software Documentation 9.1.0",
+   "kind": "documentation",
+   "products": [
+    "advanced"
+   ],
+   "date": "2026-10-13"
+  },
+  {
+   "doc_id": "sd00008496en_us",
+   "title": "Migrating VMware VMs to VM Essentials with Zerto Guide",
+   "kind": "guide",
+   "products": [
+    "vm-essentials"
+   ],
+   "date": "2026-10-09"
+  },
+  {
+   "doc_id": "dp00008789en_us",
+   "title": "CloudOps Software - Advanced Plugin Installation Guide",
+   "kind": "guide",
+   "products": [
+    "other"
+   ],
+   "date": "2026-10-05"
+  },
+  {
+   "doc_id": "a00163626en_us",
+   "title": "Bulletin: HPE Morpheus Software - HVM OS Advisory for Security Vulnerability CVE-2026-64561 on Systems Running Ubuntu 24.04",
+   "kind": "bulletin",
+   "products": [
+    "vm-essentials"
+   ],
+   "date": "2026-10-01"
+  },
+  {
+   "doc_id": "dp00008463en_us",
+   "title": "HPE Morpheus Enterprise Release Notes - 9.0.2",
+   "kind": "release-notes",
+   "products": [
+    "enterprise"
+   ],
+   "date": "2026-09-25"
+  },
+  {
+   "doc_id": "dp00008462en_us",
+   "title": "HPE Morpheus VM Essentials Software Release Notes - 9.0.2",
+   "kind": "release-notes",
+   "products": [
+    "vm-essentials"
+   ],
+   "date": "2026-09-25"
+  },
+  {
+   "doc_id": "sf000117800en_us",
+   "title": "HPE Morpheus VM Essential: 9.0.0 - After upgrading an HVM cluster from Cluster Layout 1.2 to Cluster Layout 1.3 datastores fail to mount in all cluster nodes",
+   "kind": "kb-article",
+   "products": [
+    "vm-essentials"
+   ],
+   "date": "2026-09-21"
+  },
+  {
+   "doc_id": "sf000117787en_us",
+   "title": "HPE Morpheus VM Essentials 8.1.2 - HPE SimpliVity 325 Gen11 - SVC Version 6.0.0.16 - Unable to power on SVC - Fails with \"Invalid value '1' for 'cpuset.mems': Invalid argument.\"",
+   "kind": "kb-article",
+   "products": [
+    "advanced",
+    "vm-essentials"
+   ],
+   "date": "2026-09-21"
+  },
+  {
+   "doc_id": "sd00008461en_us",
+   "title": "HPE Storage Integration Pack for VM Essentials 9.0.2 Release Notes",
+   "kind": "release-notes",
+   "products": [
+    "vm-essentials"
+   ],
+   "date": "2026-08-31"
+  },
+  {
+   "doc_id": "sd00008433en_us",
+   "title": "HPE Morpheus Enterprise Software Documentation v9.0.2",
+   "kind": "documentation",
+   "products": [
+    "enterprise"
+   ],
+   "date": "2026-08-28"
+  },
+  {
+   "doc_id": "sf000114552en_us",
+   "title": "HPE Morpheus VM Essential 8.x.x How to expand datastore size online",
+   "kind": "kb-article",
+   "products": [
+    "vm-essentials"
+   ],
+   "date": "2026-08-27"
+  },
+  {
+   "doc_id": "sf000111822en_us",
+   "title": "HPE Morpheus VM Essentials Software 8.x.x unable to create new virtual machines using HPE VM essentials manager",
+   "kind": "kb-article",
+   "products": [
+    "all"
+   ],
+   "date": "2026-08-27"
+  },
+  {
+   "doc_id": "sf000111821en_us",
+   "title": "HPE Morpheus VM Essential 8.0.13 and below versions iSCSI startup for HVM hypervisors reverts to \"manual\" after being set to \"automatic\"",
+   "kind": "kb-article",
+   "products": [
+    "all"
+   ],
+   "date": "2026-08-27"
+  },
+  {
+   "doc_id": "sd00008401en_us",
+   "title": "HPE Morpheus VM Essentials Software Documentation v9.0.2",
+   "kind": "documentation",
+   "products": [
+    "vm-essentials"
+   ],
+   "date": "2026-08-27"
+  },
+  {
+   "doc_id": "sd00008375en_us",
+   "title": "HPE Morpheus Enterprise Software Documentation v9.0.1",
+   "kind": "documentation",
+   "products": [
+    "enterprise"
+   ],
+   "date": "2026-08-06"
+  },
+  {
+   "doc_id": "sd00008374en_us",
+   "title": "HPE Morpheus VM Essentials Software Documentation v9.0.1",
+   "kind": "documentation",
+   "products": [
+    "vm-essentials"
+   ],
+   "date": "2026-08-06"
+  },
+  {
+   "doc_id": "a00162436en_us",
+   "title": "Advisory: Morpheus 8.x - Repeated SCSI Scan Attempts (/sys/class/scsi_host/< host>/scan) Result in Processes (tee) Becoming Unresponsive In Uninterruptible Sleep (D state)",
+   "kind": "advisory",
+   "products": [
+    "other"
+   ],
+   "date": "2026-08-05"
+  },
+  {
+   "doc_id": "sd00006978en_us",
+   "title": "HPE Morpheus Enterprise Software CLI Documentation Reference",
+   "kind": "guide",
+   "products": [
+    "advanced",
+    "enterprise",
+    "vm-essentials"
+   ],
+   "date": "2026-08-02"
+  },
+  {
+   "doc_id": "sd00008136en_us",
+   "title": "HPE Morpheus Central Release Notes",
+   "kind": "release-notes",
+   "products": [
+    "advanced",
+    "enterprise",
+    "vm-essentials"
+   ],
+   "date": "2026-07-26"
+  },
+  {
+   "doc_id": "sd00008014en_us",
+   "title": "HPE Morpheus Enterprise Software Documentation v9.0.0",
+   "kind": "documentation",
+   "products": [
+    "enterprise"
+   ],
+   "date": "2026-07-25"
+  },
+  {
+   "doc_id": "a00161432en_us",
+   "title": "Advisory: (Revision) HPE Zerto Software - Veeam Backup Jobs Fail for VMs Protected by Zerto 10.8.11 / 10.9 on the HPE HVM Hypervisor",
+   "kind": "advisory",
+   "products": [
+    "vm-essentials"
+   ],
+   "date": "2026-07-23"
+  },
+  {
+   "doc_id": "sd00008297en_us",
+   "title": "HPE Morpheus VM Essentials Software Release Notes v9.0.1",
+   "kind": "release-notes",
+   "products": [
+    "vm-essentials"
+   ],
+   "date": "2026-07-20"
+  },
+  {
+   "doc_id": "sd00008269en_us",
+   "title": "HPE Morpheus Enterprise Software Release Notes v9.0.1",
+   "kind": "release-notes",
+   "products": [
+    "enterprise"
+   ],
+   "date": "2026-07-20"
+  },
+  {
+   "doc_id": "sf000115565en_us",
+   "title": "HPE Morpheus Enterprise Software 8.1.2 Global search not indexing any results",
+   "kind": "kb-article",
+   "products": [
+    "all"
+   ],
+   "date": "2026-07-10"
+  },
+  {
+   "doc_id": "sd00008058en_us",
+   "title": "HPE Morpheus VM Essentials Software Documentation v9.0.0",
+   "kind": "documentation",
+   "products": [
+    "vm-essentials"
+   ],
+   "date": "2026-07-07"
+  },
+  {
+   "doc_id": "sd00007332en_us",
+   "title": "HPE Morpheus VM Essentials Deployment Guide",
+   "kind": "documentation",
+   "products": [
+    "vm-essentials"
+   ],
+   "date": "2026-07-07"
+  },
+  {
+   "doc_id": "sf000109519en_us",
+   "title": "Configuring NTP for HVM host",
+   "kind": "kb-article",
+   "products": [
+    "vm-essentials"
+   ],
+   "date": "2026-07-02"
+  },
+  {
+   "doc_id": "sd00008079en_us",
+   "title": "HPE Morpheus VM Essentials v9.0.0 Release Notes",
+   "kind": "release-notes",
+   "products": [
+    "vm-essentials"
+   ],
+   "date": "2026-06-23"
+  },
+  {
+   "doc_id": "sd00008017en_us",
+   "title": "HPE Morpheus Enterprise Software v9.0.0 Release Notes",
+   "kind": "release-notes",
+   "products": [
+    "enterprise"
+   ],
+   "date": "2026-06-22"
+  },
+  {
+   "doc_id": "sf000114905en_us",
+   "title": "How to set a static ip over rocky linux qcow2 vm",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-06-16"
+  },
+  {
+   "doc_id": "dp00008064en_us",
+   "title": "HPE Storage Integration Pack for HPE Alletra MP B10000 Storage",
+   "kind": "guide",
+   "products": [
+    "vm-essentials"
+   ],
+   "date": "2026-06-16"
+  },
+  {
+   "doc_id": "sd00008055en_us",
+   "title": "HPE Storage Integration Pack for VM Essentials 9.0 Release Notes",
+   "kind": "release-notes",
+   "products": [
+    "vm-essentials"
+   ],
+   "date": "2026-06-15"
+  },
+  {
+   "doc_id": "sd00008051en_us",
+   "title": "HPE Morpheus Essentials v9.0.0 Release Notes",
+   "kind": "release-notes",
+   "products": [
+    "vm-essentials"
+   ],
+   "date": "2026-06-12"
+  },
+  {
+   "doc_id": "a00160452en_us",
+   "title": "Advisory: HPE Private Cloud Business Edition with Morpheus VME 8.x - To Ensure the High Availability (HA) Cluster Functions as Expected, the Configuration Must be Limited to No More Than One Heartbeat Datastore",
+   "kind": "advisory",
+   "products": [
+    "vm-essentials"
+   ],
+   "date": "2026-05-22"
+  },
+  {
+   "doc_id": "dp00007894en_us",
+   "title": "HPE Reference Architecture for HPE Morpheus VM Essentials Software 8.0.10 HPE Synergy 480 Gen12 Compute Module and HPE Alletra Storage MP B10000-FC",
+   "kind": "guide",
+   "products": [
+    "vm-essentials"
+   ],
+   "date": "2026-05-19"
+  },
+  {
+   "doc_id": "dp00007844en_us",
+   "title": "HPE Reference Architecture for HPE Morpheus VM Essentials Software HPE ProLiant Servers and HPE Alletra Storage MP B10000-Fibre Channel",
+   "kind": "guide",
+   "products": [
+    "vm-essentials"
+   ],
+   "date": "2026-05-14"
+  },
+  {
+   "doc_id": "a00159674en_us",
+   "title": "Notice: HPE Morpheus Software - Ceph Support for HVM Advisory",
+   "kind": "notice",
+   "products": [
+    "enterprise",
+    "vm-essentials"
+   ],
+   "date": "2026-05-14"
+  },
+  {
+   "doc_id": "dp00007843en_us",
+   "title": "HPE Reference Architecture for SAP automation with HPE Morpheus Enterprise Software on Predefined Configuration and VMware virtualization",
+   "kind": "guide",
+   "products": [
+    "enterprise"
+   ],
+   "date": "2026-05-13"
+  },
+  {
+   "doc_id": "sd00007510en_us",
+   "title": "HPE Morpheus Enterprise Software Documentation v8.1.0",
+   "kind": "documentation",
+   "products": [
+    "enterprise"
+   ],
+   "date": "2026-04-29"
+  },
+  {
+   "doc_id": "a00159199en_us",
+   "title": "Advisory: Morpheus Enterprise 8.0.11 - Resizing Virtual Machines May Remove Virtual Disk Attachment and Prevent Booting",
+   "kind": "advisory",
+   "products": [
+    "enterprise",
+    "vm-essentials"
+   ],
+   "date": "2026-04-28"
+  },
+  {
+   "doc_id": "a00158567en_us",
+   "title": "Notice: HPE Morpheus Software - VM Essentials 8.1.1 Release Announcement",
+   "kind": "notice",
+   "products": [
+    "enterprise",
+    "vm-essentials"
+   ],
+   "date": "2026-04-08"
+  },
+  {
+   "doc_id": "sf000112126en_us",
+   "title": "How to Maintenance a CEPH Node",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-03-28"
+  },
+  {
+   "doc_id": "a00158075en_us",
+   "title": "Advisory: HPE Morpheus VM Essentials Software - DirectSync cache setting cannot be changed while the CD-ROM is mounted",
+   "kind": "advisory",
+   "products": [
+    "enterprise",
+    "vm-essentials"
+   ],
+   "date": "2026-03-20"
+  },
+  {
+   "doc_id": "a00158039en_us",
+   "title": "Notice: HPE Morpheus Software - VM Essentials 8.1.0 Release Announcement",
+   "kind": "notice",
+   "products": [
+    "enterprise",
+    "vm-essentials"
+   ],
+   "date": "2026-03-19"
+  },
+  {
+   "doc_id": "sf000112180en_us",
+   "title": "HPE VME Manager display repeated errors: qxl_alloc_bo_reserved, failed to allocate VRAM BO, Buffer eviction failed",
+   "kind": "kb-article",
+   "products": [
+    "all"
+   ],
+   "date": "2026-02-24"
+  },
+  {
+   "doc_id": "sf000112131en_us",
+   "title": "How do Morpheus Javascript Tasks work? Do you support NodeJS?",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-19"
+  },
+  {
+   "doc_id": "sf000112130en_us",
+   "title": "Morpheus Data Security Response Policy",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-19"
+  },
+  {
+   "doc_id": "sf000112129en_us",
+   "title": "How to customize the instance provisioning wizard to lock down or preset fields for groups of users",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-19"
+  },
+  {
+   "doc_id": "sf000112128en_us",
+   "title": "I want to install anti-virus software on my Morpheus appliance, are there any considerations or exclusions I should make?",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-19"
+  },
+  {
+   "doc_id": "sf000112127en_us",
+   "title": "Recommended restart procedure for High Availability (HA) Morpheus appliances",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-19"
+  },
+  {
+   "doc_id": "sf000112125en_us",
+   "title": "RPC Error when attempting to add an AWS EFS file share",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-19"
+  },
+  {
+   "doc_id": "sf000112124en_us",
+   "title": "Users with Arabic characters in their usernames fail to log into Morpheus",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-19"
+  },
+  {
+   "doc_id": "sf000112123en_us",
+   "title": "How to use Morpheus Cypher to pass secrets into a Terraform Blueprint",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-19"
+  },
+  {
+   "doc_id": "sf000112121en_us",
+   "title": "New Azure Resource Groups are created each time I deploy an ARM Spec Template",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-19"
+  },
+  {
+   "doc_id": "sf000112120en_us",
+   "title": "How to configure Morpheus to send SMS alerts via Twilio",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-19"
+  },
+  {
+   "doc_id": "sf000112118en_us",
+   "title": "How to give CIMv2 access for full Morpheus integration compatibility with Microsoft DNS",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-19"
+  },
+  {
+   "doc_id": "sf000112117en_us",
+   "title": "Syntax errors and failures when deploying Apps from Helm Blueprints",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-19"
+  },
+  {
+   "doc_id": "sf000112116en_us",
+   "title": "Task Execution on Linux VMs from Morpheus",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-19"
+  },
+  {
+   "doc_id": "sf000112110en_us",
+   "title": "I recently renewed my license but I'm receiving a warning that the license has expired",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-19"
+  },
+  {
+   "doc_id": "sf000112106en_us",
+   "title": "Instance variables returning old VM specs as part of reconfiguration-stage task on a provisioning Workflow",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-19"
+  },
+  {
+   "doc_id": "sf000112105en_us",
+   "title": "How does Morpheus manage the memory it uses?",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-19"
+  },
+  {
+   "doc_id": "sf000112104en_us",
+   "title": "Morpheus Database Password Rotation",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-19"
+  },
+  {
+   "doc_id": "sf000112100en_us",
+   "title": "How to force the \"Auto - Datastore\" selection during deployment",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-19"
+  },
+  {
+   "doc_id": "sf000112099en_us",
+   "title": "Morpheus appliance database backups repeatedly fail",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-19"
+  },
+  {
+   "doc_id": "sf000112098en_us",
+   "title": "How to call Hashicorp Vault secret values into Morpheus Automation",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-19"
+  },
+  {
+   "doc_id": "sf000112089en_us",
+   "title": "Onboarding VMware Content Library Images",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-19"
+  },
+  {
+   "doc_id": "sf000112085en_us",
+   "title": "Huawei Cloud integration added",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-19"
+  },
+  {
+   "doc_id": "sf000112084en_us",
+   "title": "How to upgrade Morpheus",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-19"
+  },
+  {
+   "doc_id": "sf000112082en_us",
+   "title": "Morpheus is generating keypairs for VMs when none is configured for the cloud-init user",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-19"
+  },
+  {
+   "doc_id": "sf000112081en_us",
+   "title": "Morpheus Variables",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-19"
+  },
+  {
+   "doc_id": "sf000112080en_us",
+   "title": "Multitenant User Roles Explained",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-19"
+  },
+  {
+   "doc_id": "sf000112078en_us",
+   "title": "My support account has been deactivated",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-19"
+  },
+  {
+   "doc_id": "sf000112077en_us",
+   "title": "Morpheus log volumes are too high",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-19"
+  },
+  {
+   "doc_id": "sf000112076en_us",
+   "title": "The Veeam backup job name entered in Morpheus doesn't match in Veeam",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-19"
+  },
+  {
+   "doc_id": "sf000112070en_us",
+   "title": "Terraform Apps are slow and produce errors in logs",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-19"
+  },
+  {
+   "doc_id": "sf000112067en_us",
+   "title": "How to Check Ceph Health",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-19"
+  },
+  {
+   "doc_id": "sf000112066en_us",
+   "title": "Troubleshooting Veeam clone job issues when the integration is added in Master Tenant",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-19"
+  },
+  {
+   "doc_id": "sf000112065en_us",
+   "title": "Morpheus Agent is installed but not communicating",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-19"
+  },
+  {
+   "doc_id": "sf000112064en_us",
+   "title": "Subtenant Users Cannot Create Dell Isilon File Shares",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-19"
+  },
+  {
+   "doc_id": "sf000112061en_us",
+   "title": "How to cleanly uninstall Morpheus",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-19"
+  },
+  {
+   "doc_id": "sf000112058en_us",
+   "title": "How to install Morpheus on an air-gapped SLES environment",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-19"
+  },
+  {
+   "doc_id": "sf000112057en_us",
+   "title": "Morpheus Open Source Code Support Policy",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-19"
+  },
+  {
+   "doc_id": "sf000112054en_us",
+   "title": "Support Case Escalation Process",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-19"
+  },
+  {
+   "doc_id": "sf000112052en_us",
+   "title": "How can I get a list of active users across all tenants?",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-19"
+  },
+  {
+   "doc_id": "sf000112051en_us",
+   "title": "Root Cause Analysis (RCA) and Morpheus Support",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-19"
+  },
+  {
+   "doc_id": "sf000112044en_us",
+   "title": "How to get started developing custom plugins for Morpheus",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-19"
+  },
+  {
+   "doc_id": "sf000112043en_us",
+   "title": "How to decommission a CEPH-backed Host",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-19"
+  },
+  {
+   "doc_id": "sf000112040en_us",
+   "title": "How to add a brownfield Kubernetes cluster",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-19"
+  },
+  {
+   "doc_id": "sf000112039en_us",
+   "title": "Morpheus SCVMM Cloud not updating after applying cumulative update (CU)",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-19"
+  },
+  {
+   "doc_id": "sf000112034en_us",
+   "title": "Unable to delete tenant due to missing database table (storage_group_storage_volume)",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-19"
+  },
+  {
+   "doc_id": "sf000112033en_us",
+   "title": "How to install Morpheus with a free community license",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-19"
+  },
+  {
+   "doc_id": "sf000112032en_us",
+   "title": "Public cloud integration failing (443 error) when appliance is behind a proxy",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-19"
+  },
+  {
+   "doc_id": "sf000112031en_us",
+   "title": "Scheduled MySQL database backups are repeatedly failing (Access Denied error in logs)",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-19"
+  },
+  {
+   "doc_id": "sf000112029en_us",
+   "title": "How to write a Python script to create an incident in ServiceNow for an Instance deployed in Morpheus",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-19"
+  },
+  {
+   "doc_id": "sf000112026en_us",
+   "title": "New User Group Creation Policy Type",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-19"
+  },
+  {
+   "doc_id": "sf000112023en_us",
+   "title": "Newly created SSH key is not showing up in the dropdown menu when adding a new integration",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-19"
+  },
+  {
+   "doc_id": "sf000112021en_us",
+   "title": "Unable to create Persistent Volumes (PVs) in a Morpheus Kubernetes Cluster with OpenEBS",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-19"
+  },
+  {
+   "doc_id": "sf000112019en_us",
+   "title": "How to convert your entire Morpheus database from latin1 character set to utf8",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-19"
+  },
+  {
+   "doc_id": "sf000112015en_us",
+   "title": "Morpheus Windows Agent Install modes",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-19"
+  },
+  {
+   "doc_id": "sf000112014en_us",
+   "title": "How to purge Elasticsearch logs and automate future Elasticsearch log management",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-19"
+  },
+  {
+   "doc_id": "sf000112011en_us",
+   "title": "Procedure for reconfiguring Morpheus when services were restarted",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-19"
+  },
+  {
+   "doc_id": "sf000112010en_us",
+   "title": "How to filter a REST-type Option List by logged-in user attributes",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-19"
+  },
+  {
+   "doc_id": "sf000112007en_us",
+   "title": "Price estimates aren't shown in the provisioning wizard",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-19"
+  },
+  {
+   "doc_id": "sf000112005en_us",
+   "title": "Understanding Multi-Tenancy, Tenant Roles, and User Roles",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-19"
+  },
+  {
+   "doc_id": "sf000112004en_us",
+   "title": "Test scenarios for deleting Azure Clouds (Internal Article)",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-19"
+  },
+  {
+   "doc_id": "sf000112002en_us",
+   "title": "How to use GCP service account credentials within Terraform",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-19"
+  },
+  {
+   "doc_id": "sf000112001en_us",
+   "title": "Morpheus Agent Resource Usage on Managed Machines",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-19"
+  },
+  {
+   "doc_id": "sf000111998en_us",
+   "title": "Troubleshooting KVM Instances",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-19"
+  },
+  {
+   "doc_id": "sf000111996en_us",
+   "title": "MySQL DB clusters are failing to start on a 3-node cluster",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-19"
+  },
+  {
+   "doc_id": "sf000111995en_us",
+   "title": "How to access the Morpheus MySQL database",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-19"
+  },
+  {
+   "doc_id": "sf000111994en_us",
+   "title": "How to consume very large payloads from Morpheus API",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-19"
+  },
+  {
+   "doc_id": "sf000111992en_us",
+   "title": "How to purge MySQL replication binary logs from database servers",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-19"
+  },
+  {
+   "doc_id": "sf000111991en_us",
+   "title": "Unable to add SSH key pairs (Invalid public key format)",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-19"
+  },
+  {
+   "doc_id": "sf000111989en_us",
+   "title": "Tenant users are unable to save passwords in Administrator > Settings > Provisioning",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-19"
+  },
+  {
+   "doc_id": "sf000111988en_us",
+   "title": "How to configure Morpheus alerts via SMTP email and Twilio SMS",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-19"
+  },
+  {
+   "doc_id": "sf000111983en_us",
+   "title": "How to purge RabbitMQ queues",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-19"
+  },
+  {
+   "doc_id": "sf000111981en_us",
+   "title": "Morpheus won't accept my key pair (Infrastructure > Keys & Certs)",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-19"
+  },
+  {
+   "doc_id": "sf000111978en_us",
+   "title": "Morpheus is not releasing IP addresses back into the IP pool after changing the IP address on a VM",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-19"
+  },
+  {
+   "doc_id": "sf000111977en_us",
+   "title": "The syslog forwarder is not forwarding events to email",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-19"
+  },
+  {
+   "doc_id": "sf000111975en_us",
+   "title": "Provisioning Concepts",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-19"
+  },
+  {
+   "doc_id": "sf000111973en_us",
+   "title": "Support Case Status Definitions",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-19"
+  },
+  {
+   "doc_id": "sf000111972en_us",
+   "title": "How to clean up multiple backup jobs from the database (internal)",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-19"
+  },
+  {
+   "doc_id": "sf000111970en_us",
+   "title": "How to access the network name for an instance VM in a Morpheus variable or in Ansible",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-19"
+  },
+  {
+   "doc_id": "sf000111968en_us",
+   "title": "Immediately following a Morpheus upgrade, Tasks are failing out with errors",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-19"
+  },
+  {
+   "doc_id": "sf000111967en_us",
+   "title": "Is it possible to include multiple BASH commands in the Cloud Init User Data field within a Virtual Image?",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-19"
+  },
+  {
+   "doc_id": "sf000111960en_us",
+   "title": "Morpheus redirects to a hostname or IP address in the browser rather than sticking to the desired domain",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-19"
+  },
+  {
+   "doc_id": "sf000111938en_us",
+   "title": "Morpheus spontaneously logs the user out while working",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-19"
+  },
+  {
+   "doc_id": "sf000111935en_us",
+   "title": "SSL errors received when attempting to read Cypher secrets with the morpheuscypher library",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-19"
+  },
+  {
+   "doc_id": "sf000111933en_us",
+   "title": "Unable to integrate with GCP account due to token error (Token must be a short-lived token)",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-19"
+  },
+  {
+   "doc_id": "sf000111932en_us",
+   "title": "How can I view audit logs for user login and actions?",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-19"
+  },
+  {
+   "doc_id": "sf000111930en_us",
+   "title": "My Option List translation script no longer works",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-19"
+  },
+  {
+   "doc_id": "sf000111929en_us",
+   "title": "No container host is available for provisioning for group",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-19"
+  },
+  {
+   "doc_id": "sf000111918en_us",
+   "title": "Morpheus Agent install is failing on AWS Linux",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-19"
+  },
+  {
+   "doc_id": "sf000111916en_us",
+   "title": "How long must conditions be met in scale thresholds before Morpheus begins provisioning additional instances?",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-19"
+  },
+  {
+   "doc_id": "sf000111912en_us",
+   "title": "Mute and Unmute Monitoring Checks now available from CLI & API",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-19"
+  },
+  {
+   "doc_id": "sf000111911en_us",
+   "title": "Morpheus UI Text is Unreadable",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-19"
+  },
+  {
+   "doc_id": "sf000111908en_us",
+   "title": "How to update an Azure cloud to sync EA or CSP pricing",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-19"
+  },
+  {
+   "doc_id": "sf000111242en_us",
+   "title": "Morpheus Release Cadence and Long-Term Support Windows",
+   "kind": "kb-article",
+   "products": [
+    "cloudops",
+    "vm-essentials"
+   ],
+   "date": "2026-02-19"
+  },
+  {
+   "doc_id": "sf000111905en_us",
+   "title": "SolarWinds, through its Morpheus integration, is assigning duplicate IP addresses",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-18"
+  },
+  {
+   "doc_id": "sf000111902en_us",
+   "title": "Removing Orphaned VMs from MVM Cluster",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-18"
+  },
+  {
+   "doc_id": "sf000111899en_us",
+   "title": "How to create a Windows Server image for SCVMM",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-18"
+  },
+  {
+   "doc_id": "sf000111898en_us",
+   "title": "Running Ansible Tasks which connect to dependent repositories over SSH",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-18"
+  },
+  {
+   "doc_id": "sf000111897en_us",
+   "title": "How primary and fallback backup targets are selected by Morpheus",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-18"
+  },
+  {
+   "doc_id": "sf000111896en_us",
+   "title": "How to fix missing queues from the RabbitMQ cluster nodes (non-external)",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-18"
+  },
+  {
+   "doc_id": "sf000111895en_us",
+   "title": "Internal HA Document",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-18"
+  },
+  {
+   "doc_id": "sf000111893en_us",
+   "title": "Object Storage Quotas",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-18"
+  },
+  {
+   "doc_id": "sf000111892en_us",
+   "title": "How to copy logs from the Morpheus appliance",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-18"
+  },
+  {
+   "doc_id": "sf000111890en_us",
+   "title": "SSH Key Pairs and Morpheus",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-18"
+  },
+  {
+   "doc_id": "sf000111888en_us",
+   "title": "Tips for getting started with LDAP Identity Source Integration",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-18"
+  },
+  {
+   "doc_id": "sf000111886en_us",
+   "title": "Morpheus Support Case Categories",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-18"
+  },
+  {
+   "doc_id": "sf000111884en_us",
+   "title": "List of log locations",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-18"
+  },
+  {
+   "doc_id": "sf000111882en_us",
+   "title": "New user cannot access Morpheus despite being in the correct Active Directory groups",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-18"
+  },
+  {
+   "doc_id": "sf000111881en_us",
+   "title": "Mail isn't being sent from the Morpheus appliance",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-18"
+  },
+  {
+   "doc_id": "sf000111880en_us",
+   "title": "Our security scan turned up weak SSH key exchange algoithms",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-18"
+  },
+  {
+   "doc_id": "sf000111875en_us",
+   "title": "Provisioning Windows VMs to SCVMM Clouds fails with UI error \"Cannot set property 'externalId' on null object\"",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-18"
+  },
+  {
+   "doc_id": "sf000111873en_us",
+   "title": "Resizing a node results in a warning that the action will cause downtime (MKS VMware)",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-18"
+  },
+  {
+   "doc_id": "sf000111872en_us",
+   "title": "How to put Guacamole into debug mode (internal)",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-18"
+  },
+  {
+   "doc_id": "sf000111871en_us",
+   "title": "How can I bake the Morpheus Agent install into the boot process for a Linux/Windows VM that can't be launched through Morpheus?",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-18"
+  },
+  {
+   "doc_id": "sf000111870en_us",
+   "title": "Reported prices are lower than expected when running reports on VMWare virtual machines",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-18"
+  },
+  {
+   "doc_id": "sf000111869en_us",
+   "title": "How to use Morpheus variables with Ansible Tower",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-18"
+  },
+  {
+   "doc_id": "sf000111868en_us",
+   "title": "I successfully added a Git integration but can't find my repos when creating Tasks",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-18"
+  },
+  {
+   "doc_id": "sf000111860en_us",
+   "title": "Subtenant Users can only create Service Plans with default price sets",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-18"
+  },
+  {
+   "doc_id": "sf000111859en_us",
+   "title": "How to Check Ceph Replication Size",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-18"
+  },
+  {
+   "doc_id": "sf000111858en_us",
+   "title": "Required RabbitMQ Policies",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-18"
+  },
+  {
+   "doc_id": "sf000111854en_us",
+   "title": "How to delete backup jobs stuck in progress that cannot be deleted",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-18"
+  },
+  {
+   "doc_id": "sf000111851en_us",
+   "title": "How to prep a RHEL 9 (Red Hat) image targeting VMware Cloud for use in Morpheus",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-18"
+  },
+  {
+   "doc_id": "sf000111850en_us",
+   "title": "How to limit the number of workload elements which can be consumed by a Tenant",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-18"
+  },
+  {
+   "doc_id": "sf000111846en_us",
+   "title": "How does price comparison during instance provisioning work?",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-18"
+  },
+  {
+   "doc_id": "sf000111844en_us",
+   "title": "How to set up custom CMDB mapping between Morpheus and ServiceNow",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-18"
+  },
+  {
+   "doc_id": "sf000111841en_us",
+   "title": "How do Morpheus Scale Thresholds and Scale Schedules work?",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-18"
+  },
+  {
+   "doc_id": "sf000111836en_us",
+   "title": "I am no longer receiving email alerts or SMS text alerts from Morpheus",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-18"
+  },
+  {
+   "doc_id": "sf000111835en_us",
+   "title": "The State tab is missing on Terraform-backed Instances",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-18"
+  },
+  {
+   "doc_id": "sf000111807en_us",
+   "title": "Morpheus Recommendations on System Images",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-18"
+  },
+  {
+   "doc_id": "sf000111805en_us",
+   "title": "Morpheus Support Case Priority Definitions",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-18"
+  },
+  {
+   "doc_id": "sf000111799en_us",
+   "title": "Increased resource consumption on Morpheus appliance related to Remedy integration",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-17"
+  },
+  {
+   "doc_id": "sf000111797en_us",
+   "title": "SSL intercepts and Morpheus",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-17"
+  },
+  {
+   "doc_id": "sf000111795en_us",
+   "title": "Typeahead search strings that previously worked on my Option Types no longer return anything",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-17"
+  },
+  {
+   "doc_id": "sf000111794en_us",
+   "title": "Morpheus Logs aren't showing up in Operations > Health > Morpheus Logs tab",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-17"
+  },
+  {
+   "doc_id": "sf000111792en_us",
+   "title": "How to add custom text to the Instances List Page",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-17"
+  },
+  {
+   "doc_id": "sf000111791en_us",
+   "title": "Invalid Credential Errors when Authenticating Session for Morpheus API",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-17"
+  },
+  {
+   "doc_id": "sf000111786en_us",
+   "title": "How to disable tag syncing for VMware Clouds",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-17"
+  },
+  {
+   "doc_id": "sf000111783en_us",
+   "title": "SCAP scans fail on MySQL errors related to packet size",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-17"
+  },
+  {
+   "doc_id": "sf000111669en_us",
+   "title": "HVM High Availability Failover Methodology",
+   "kind": "kb-article",
+   "products": [
+    "cloudops",
+    "vm-essentials"
+   ],
+   "date": "2026-02-12"
+  },
+  {
+   "doc_id": "sf000111606en_us",
+   "title": "How to configure CHAP for iSCSI session authentication",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-10"
+  },
+  {
+   "doc_id": "sf000111412en_us",
+   "title": "AWS: Costing & Reservations sync",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-04"
+  },
+  {
+   "doc_id": "sf000111411en_us",
+   "title": "Ansible verbose logging mode",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-02-04"
+  },
+  {
+   "doc_id": "sf000111134en_us",
+   "title": "After upgrading to 5.3.4+, duplicate NSX-T networks still exist",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2026-01-23"
+  },
+  {
+   "doc_id": "sd00007229en_us",
+   "title": "HPE Morpheus Enterprise Software Documentation v8.0.12",
+   "kind": "documentation",
+   "products": [
+    "enterprise"
+   ],
+   "date": "2026-01-22"
+  },
+  {
+   "doc_id": "sd00007079en_us",
+   "title": "HPE Morpheus Enterprise Software Documentation v8.0.11",
+   "kind": "documentation",
+   "products": [
+    "enterprise"
+   ],
+   "date": "2026-01-22"
+  },
+  {
+   "doc_id": "sd00006774en_us",
+   "title": "HPE Morpheus Enterprise Software Documentation v8.0.10",
+   "kind": "documentation",
+   "products": [
+    "enterprise"
+   ],
+   "date": "2026-01-22"
+  },
+  {
+   "doc_id": "sd00007230en_us",
+   "title": "HPE Morpheus VM Essentials Software Documentation v8.0.12",
+   "kind": "documentation",
+   "products": [
+    "vm-essentials"
+   ],
+   "date": "2026-01-10"
+  },
+  {
+   "doc_id": "sd00007140en_us",
+   "title": "HPE Morpheus VM Essentials Software Release Notes v8.0.12",
+   "kind": "release-notes",
+   "products": [
+    "vm-essentials"
+   ],
+   "date": "2026-01-10"
+  },
+  {
+   "doc_id": "sd00006775en_us",
+   "title": "HPE Morpheus VM Essentials Software Documentation v8.0.10",
+   "kind": "documentation",
+   "products": [
+    "vm-essentials"
+   ],
+   "date": "2026-01-07"
+  },
+  {
+   "doc_id": "a00156214en_us",
+   "title": "Advisory: HPE Morpheus VM Essentials Software - Failure of a Hardware Virtual Machine (HVM) Host in the Cluster Results in All Other Nodes Losing Access to the Global Filesystem 2 (GFS2) in Cluster Created using VME Manager Version 8.0.11 or 80.12",
+   "kind": "advisory",
+   "products": [
+    "enterprise",
+    "vm-essentials"
+   ],
+   "date": "2026-01-07"
+  },
+  {
+   "doc_id": "sd00007141en_us",
+   "title": "HPE Morpheus Enterprise Software Release Notes v8.0.12",
+   "kind": "release-notes",
+   "products": [
+    "enterprise"
+   ],
+   "date": "2026-01-03"
+  },
+  {
+   "doc_id": "sd00007069en_us",
+   "title": "HPE Morpheus VM Essentials Software Release Notes v8.0.11",
+   "kind": "release-notes",
+   "products": [
+    "vm-essentials"
+   ],
+   "date": "2026-01-03"
+  },
+  {
+   "doc_id": "sd00007043en_us",
+   "title": "HPE Morpheus Enterprise Software Release Notes v8.0.11",
+   "kind": "release-notes",
+   "products": [
+    "enterprise"
+   ],
+   "date": "2026-01-03"
+  },
+  {
+   "doc_id": "sd00007238en_us",
+   "title": "HPE Storage Integration Pack for VM Essentials 8.0.12 Release Notes",
+   "kind": "release-notes",
+   "products": [
+    "vm-essentials"
+   ],
+   "date": "2025-12-24"
+  },
+  {
+   "doc_id": "sf000110701en_us",
+   "title": "How are repositories from a Git and Github integration displayed when used in a Morpheus Task?",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2025-12-10"
+  },
+  {
+   "doc_id": "sf000110700en_us",
+   "title": "How are cloud utilization stats computed?",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2025-12-10"
+  },
+  {
+   "doc_id": "sf000110698en_us",
+   "title": "Hosts page filters aren't working",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2025-12-10"
+  },
+  {
+   "doc_id": "sf000110697en_us",
+   "title": "HAproxy Load Balancer Does Not Appear in VMware Resource Pool",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2025-12-10"
+  },
+  {
+   "doc_id": "sf000110679en_us",
+   "title": "Global search function is not returning results",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2025-12-09"
+  },
+  {
+   "doc_id": "sf000110678en_us",
+   "title": "Github no longer allowing API authentication using passwords",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2025-12-09"
+  },
+  {
+   "doc_id": "sf000110676en_us",
+   "title": "General tips for creating Azure VM snapshot backup types",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2025-12-09"
+  },
+  {
+   "doc_id": "sf000110675en_us",
+   "title": "Fixing a RabbitMQ Inconsistent Cluster",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2025-12-09"
+  },
+  {
+   "doc_id": "sf000110673en_us",
+   "title": "Fix error: No signature of method: redis.clients.jedis.Pipeline.set() is applicable for argument types: (java.lang.String, java.lang.Integer) values: [morph-logs-sequence, 1]",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2025-12-09"
+  },
+  {
+   "doc_id": "sf000110672en_us",
+   "title": "Files which are safe to remove during a migration to HA architecture",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2025-12-09"
+  },
+  {
+   "doc_id": "sf000110671en_us",
+   "title": "File Share Storage Quotas",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2025-12-09"
+  },
+  {
+   "doc_id": "sf000110669en_us",
+   "title": "Feature Requests for New Report Types",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2025-12-09"
+  },
+  {
+   "doc_id": "sf000110668en_us",
+   "title": "Failure to create server in Azure Clouds when \"Create User\" options are unchecked during provisioning",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2025-12-09"
+  },
+  {
+   "doc_id": "sf000110667en_us",
+   "title": "Failure to Connect Error when adding a FreeNAS Samba share as CIFS-type File Share to Morpheus",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2025-12-09"
+  },
+  {
+   "doc_id": "sf000110666en_us",
+   "title": "Failed deployments are still consuming licensed workload elements",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2025-12-09"
+  },
+  {
+   "doc_id": "sf000110665en_us",
+   "title": "Errors received when running security (SCAP) scans against CentOS images",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2025-12-09"
+  },
+  {
+   "doc_id": "sf000110664en_us",
+   "title": "Errors presented when Ansible is not installed",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2025-12-09"
+  },
+  {
+   "doc_id": "sf000110663en_us",
+   "title": "Error: A volume is smaller than the image allows",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2025-12-09"
+  },
+  {
+   "doc_id": "sf000110662en_us",
+   "title": "Error messages received when running Ansible against a server instance for the first time after Morpheus version upgrade.",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2025-12-09"
+  },
+  {
+   "doc_id": "sf000110661en_us",
+   "title": "Error is displayed in logs after provisioning is completed",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2025-12-09"
+  },
+  {
+   "doc_id": "sf000110660en_us",
+   "title": "Elasticsearch indices taking up significant appliance space",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2025-12-09"
+  },
+  {
+   "doc_id": "sf000110659en_us",
+   "title": "ElasticSearch indices aren't shown on the Morpheus Health page",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2025-12-09"
+  },
+  {
+   "doc_id": "sf000110658en_us",
+   "title": "Docker is not being installed when provisioning a Docker host (Ubuntu Machine)",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2025-12-09"
+  },
+  {
+   "doc_id": "sf000110657en_us",
+   "title": "Do App Blueprints support Provisioning Workflows?",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2025-12-09"
+  },
+  {
+   "doc_id": "sf000110655en_us",
+   "title": "DNS settings not applied when provisioning to vCD Clouds",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2025-12-09"
+  },
+  {
+   "doc_id": "sf000110654en_us",
+   "title": "Discovering Source of High CPU Usage in Morpheus",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2025-12-09"
+  },
+  {
+   "doc_id": "sf000110653en_us",
+   "title": "Disable Clouds now filtered",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2025-12-09"
+  },
+  {
+   "doc_id": "sf000110652en_us",
+   "title": "Details on Morpheus calls to AWS Cost Explorer API",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2025-12-09"
+  },
+  {
+   "doc_id": "sf000110650en_us",
+   "title": "Deleted VM still shows in Morpheus UI",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2025-12-09"
+  },
+  {
+   "doc_id": "sf000110642en_us",
+   "title": "Deleted Veeam backup jobs still appear in Morpheus",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2025-12-08"
+  },
+  {
+   "doc_id": "sf000110640en_us",
+   "title": "Defining Provider Blocks for using Terraform with Morpheus",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2025-12-08"
+  },
+  {
+   "doc_id": "sf000110638en_us",
+   "title": "Database statistics are missing in Morpheus Health section with SQL syntax errors in logs",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2025-12-08"
+  },
+  {
+   "doc_id": "sf000110637en_us",
+   "title": "Database load is not shared equally in my 3-node external Percona cluster",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2025-12-08"
+  },
+  {
+   "doc_id": "sf000110636en_us",
+   "title": "Database errors on the Morpheus Health UI page (failure to connect)",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2025-12-08"
+  },
+  {
+   "doc_id": "sf000110633en_us",
+   "title": "Custom Service Plan is not showing pricing data when provisioning instance (No pricing configured)",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2025-12-08"
+  },
+  {
+   "doc_id": "sf000110632en_us",
+   "title": "Custom Plugin Development Support Policy",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2025-12-08"
+  },
+  {
+   "doc_id": "sf000110628en_us",
+   "title": "Custom Options (Option Types) are not shown in the correct order as they appear on the Instance Type or in the Layout",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2025-12-08"
+  },
+  {
+   "doc_id": "sf000110627en_us",
+   "title": "Critical Case Process",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2025-12-08"
+  },
+  {
+   "doc_id": "sf000110578en_us",
+   "title": "Certain Morpheus UI pages (Instances, Logs, etc.) show no information or permissions error messages",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2025-12-05"
+  },
+  {
+   "doc_id": "sf000110577en_us",
+   "title": "Ceph Cluster reports warning status due to root filesystem usage",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2025-12-05"
+  },
+  {
+   "doc_id": "sf000110575en_us",
+   "title": "Cannot import additional packages for Python Tasks",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2025-12-05"
+  },
+  {
+   "doc_id": "sf000110574en_us",
+   "title": "Cannot delete Cloud due to having associated VMs but there are no VMs",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2025-12-05"
+  },
+  {
+   "doc_id": "sf000110573en_us",
+   "title": "Can you get Operations > Activity > History data over Morpheus API?",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2025-12-05"
+  },
+  {
+   "doc_id": "sf000110570en_us",
+   "title": "Can the same license be applied to multiple Morpheus appliances?",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2025-12-05"
+  },
+  {
+   "doc_id": "sf000110569en_us",
+   "title": "Creating Kubernetes Clusters with underscore in the name results in duplicate DNS names",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2025-12-05"
+  },
+  {
+   "doc_id": "sf000110568en_us",
+   "title": "Can the Agent Install Script be stored and run against nodes as needed?",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2025-12-05"
+  },
+  {
+   "doc_id": "sf000110567en_us",
+   "title": "Creating a CentOS 7 Image for Morpheus Provisioning",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2025-12-05"
+  },
+  {
+   "doc_id": "sf000110565en_us",
+   "title": "Control tab is missing from the Kubernetes cluster detail page",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2025-12-05"
+  },
+  {
+   "doc_id": "sf000110564en_us",
+   "title": "Can iframe be used to place the Morpheus web interface into another website?",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2025-12-05"
+  },
+  {
+   "doc_id": "sf000110563en_us",
+   "title": "Considerations for configuring X-pack for TLS-enabled Elasticsearch clusters",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2025-12-05"
+  },
+  {
+   "doc_id": "sf000110562en_us",
+   "title": "Best practices for executing Workflows from Morpheus API",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2025-12-05"
+  },
+  {
+   "doc_id": "sf000110561en_us",
+   "title": "Configure Morpheus to utilize an alternate port for SSL",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2025-12-05"
+  },
+  {
+   "doc_id": "sf000110560en_us",
+   "title": "Common ports and requirements for Morpheus",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2025-12-05"
+  },
+  {
+   "doc_id": "sf000110558en_us",
+   "title": "Benefits of using Unattend install for Morpheus Agent over WinRM for Windows servers",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2025-12-05"
+  },
+  {
+   "doc_id": "sf000110557en_us",
+   "title": "Cloud-Init user is not created when provisioning RHEL VM",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2025-12-05"
+  },
+  {
+   "doc_id": "sf000110556en_us",
+   "title": "Clicking on the Cloud or Reference links from the Invoices List page results in a permissions error",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2025-12-05"
+  },
+  {
+   "doc_id": "sf000110555en_us",
+   "title": "Changing IP Address on VMware Virtual Machine Causes Monitoring Check to Never Recover",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2025-12-05"
+  },
+  {
+   "doc_id": "sf000110554en_us",
+   "title": "Azure Stack builds fail when selecting a Standard SSD disk type on provisioning or reconfiguring",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2025-12-05"
+  },
+  {
+   "doc_id": "sf000110553en_us",
+   "title": "Azure image (VHD) has uploaded to Morpheus successfully but provisioning from associated Instance Types fails",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2025-12-05"
+  },
+  {
+   "doc_id": "sf000110273en_us",
+   "title": "AWS: Amazon Costing & Reservations sync",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2025-12-04"
+  },
+  {
+   "doc_id": "sf000110272en_us",
+   "title": "AWS-hosted instance will not convert to managed in Morpheus",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2025-12-04"
+  },
+  {
+   "doc_id": "sf000110269en_us",
+   "title": "Automation Tasks in the Deploy phase of a Workflow do not execute after upgrade to Morpheus 4.2.1+",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2025-12-04"
+  },
+  {
+   "doc_id": "sf000110260en_us",
+   "title": "Automation Tasks Fail Intermittently (HA appliance, Tasks Utilizing Cypher)",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2025-12-04"
+  },
+  {
+   "doc_id": "sf000110259en_us",
+   "title": "Automated Downloads of Larger Files is Failing",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2025-12-04"
+  },
+  {
+   "doc_id": "sf000110258en_us",
+   "title": "Auto-Scaling is not being applied as expected on provisioned Instances",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2025-12-04"
+  },
+  {
+   "doc_id": "sf000110256en_us",
+   "title": "Apply State Action added to Terraform Apps",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2025-12-04"
+  },
+  {
+   "doc_id": "sf000110255en_us",
+   "title": "Appliance backups fail with max_allowed_packet error",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2025-12-04"
+  },
+  {
+   "doc_id": "sf000110254en_us",
+   "title": "Appliance backups are failing with error messages on newly-installed appliances",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2025-12-04"
+  },
+  {
+   "doc_id": "sf000110253en_us",
+   "title": "Appliance Backup not honoring retention counts",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2025-12-04"
+  },
+  {
+   "doc_id": "sf000110144en_us",
+   "title": "API requests to deactivate clusters are moving VMs to unknown status",
+   "kind": "kb-article",
+   "products": [
+    "cloudops"
+   ],
+   "date": "2025-12-03"
+  },
+  {
+   "doc_id": "sf000109676en_us",
+   "title": "HPE SimpliVity – How To Create A User In HPE Morpheus VME",
+   "kind": "kb-article",
+   "products": [
+    "other"
+   ],
+   "date": "2025-11-28"
+  },
+  {
+   "doc_id": "sd00007076en_us",
+   "title": "HPE Storage Integration Pack for VM Essentials 8.0.11 Release Notes",
+   "kind": "release-notes",
+   "products": [
+    "vm-essentials"
+   ],
+   "date": "2025-11-24"
+  },
+  {
+   "doc_id": "sd00007027en_us",
+   "title": "HPE Morpheus VM Essentials Software Documentation v8.0.11",
+   "kind": "documentation",
+   "products": [
+    "vm-essentials"
+   ],
+   "date": "2025-11-23"
+  },
+  {
+   "doc_id": "sf000109520en_us",
+   "title": "Setting active/backup bond type parameters with the hpe-vm cli tool",
+   "kind": "kb-article",
+   "products": [
+    "vm-essentials"
+   ],
+   "date": "2025-11-21"
+  },
+  {
+   "doc_id": "sf000109463en_us",
+   "title": "Ansible Galaxy fails to download roles due to permission errors",
+   "kind": "kb-article",
+   "products": [
+    "all"
+   ],
+   "date": "2025-11-20"
+  },
+  {
+   "doc_id": "sf000109455en_us",
+   "title": "Ansible execution over command bus",
+   "kind": "kb-article",
+   "products": [
+    "all"
+   ],
+   "date": "2025-11-19"
+  },
+  {
+   "doc_id": "sf000109454en_us",
+   "title": "Amazon Clouds can now be scoped to all VPCs",
+   "kind": "kb-article",
+   "products": [
+    "all"
+   ],
+   "date": "2025-11-19"
+  },
+  {
+   "doc_id": "sf000109453en_us",
+   "title": "All admin users are locked out of Morpheus",
+   "kind": "kb-article",
+   "products": [
+    "all"
+   ],
+   "date": "2025-11-19"
+  },
+  {
+   "doc_id": "sf000109452en_us",
+   "title": "Agent is not communicating through proxy even though 'BYPASS PROXY FOR APPLIANCE URL' is unchecked (false)",
+   "kind": "kb-article",
+   "products": [
+    "all"
+   ],
+   "date": "2025-11-19"
+  },
+  {
+   "doc_id": "sf000109451en_us",
+   "title": "Agent installation fails when provisioning the Morpheus-provided OpenSUSE Instance Type with static IP address assignment",
+   "kind": "kb-article",
+   "products": [
+    "all"
+   ],
+   "date": "2025-11-19"
+  },
+  {
+   "doc_id": "sf000109450en_us",
+   "title": "After using the \"convert to managed\" function on a discovered VM, a broken Instance is added which is not associated with any VMs",
+   "kind": "kb-article",
+   "products": [
+    "all"
+   ],
+   "date": "2025-11-19"
+  },
+  {
+   "doc_id": "sf000109449en_us",
+   "title": "After upgrading to 5.4.2, AWS Terraform Instance Types no longer pull the Terraform pricing plan which prevents provisioning",
+   "kind": "kb-article",
+   "products": [
+    "all"
+   ],
+   "date": "2025-11-19"
+  },
+  {
+   "doc_id": "sf000109448en_us",
+   "title": "After upgrading Morpheus, RHEL Instance Types do not show all associated Layouts during provisioning",
+   "kind": "kb-article",
+   "products": [
+    "all"
+   ],
+   "date": "2025-11-19"
+  },
+  {
+   "doc_id": "sf000109447en_us",
+   "title": "After the provisioning process has completed, the user wants to remove or rename directories or files bearing the Morpheus name",
+   "kind": "kb-article",
+   "products": [
+    "all"
+   ],
+   "date": "2025-11-19"
+  },
+  {
+   "doc_id": "sf000109433en_us",
+   "title": "After provisioning a VMware Instance, Morpheus does not create more than 14 disks",
+   "kind": "kb-article",
+   "products": [
+    "all"
+   ],
+   "date": "2025-11-18"
+  },
+  {
+   "doc_id": "sf000109432en_us",
+   "title": "After integrating ServiceNow, on the integration detail page, a message is displayed which indicates that the ServiceNow plugin was not detected",
+   "kind": "kb-article",
+   "products": [
+    "all"
+   ],
+   "date": "2025-11-18"
+  },
+  {
+   "doc_id": "sf000109429en_us",
+   "title": "After installing and configuring Morpheus with 3-node distribution, the user sessions automatically log out within seconds",
+   "kind": "kb-article",
+   "products": [
+    "all"
+   ],
+   "date": "2025-11-18"
+  },
+  {
+   "doc_id": "sf000109428en_us",
+   "title": "After creating an Azure NSG rule in Morpheus, it disappears on the next cloud sync",
+   "kind": "kb-article",
+   "products": [
+    "all"
+   ],
+   "date": "2025-11-18"
+  },
+  {
+   "doc_id": "sf000109426en_us",
+   "title": "After creating a new role and assigning it to users, they only see the user settings page",
+   "kind": "kb-article",
+   "products": [
+    "all"
+   ],
+   "date": "2025-11-18"
+  },
+  {
+   "doc_id": "sf000109425en_us",
+   "title": "After changing the IP address of vCenter, Morpheus is no longer syncing",
+   "kind": "kb-article",
+   "products": [
+    "all"
+   ],
+   "date": "2025-11-18"
+  },
+  {
+   "doc_id": "sf000109424en_us",
+   "title": "A user account named for the Linux distribution appears in VMs provisioned by Morpheus",
+   "kind": "kb-article",
+   "products": [
+    "all"
+   ],
+   "date": "2025-11-18"
+  },
+  {
+   "doc_id": "sf000109423en_us",
+   "title": "A Task is hanging, is there any way to manually kill the Task?",
+   "kind": "kb-article",
+   "products": [
+    "all"
+   ],
+   "date": "2025-11-18"
+  },
+  {
+   "doc_id": "sf000109418en_us",
+   "title": "A key pair was created when I provision an instance in Morpheus, such as to AWS. How do I retrieve it?",
+   "kind": "kb-article",
+   "products": [
+    "all"
+   ],
+   "date": "2025-11-18"
+  },
+  {
+   "doc_id": "sf000109416en_us",
+   "title": "500 errors (server threw a gasket) for all users when performing certain actions",
+   "kind": "kb-article",
+   "products": [
+    "all"
+   ],
+   "date": "2025-11-18"
+  },
+  {
+   "doc_id": "sf000109415en_us",
+   "title": "`error loading hypervisor config` on MVM cluster host detail page",
+   "kind": "kb-article",
+   "products": [
+    "all"
+   ],
+   "date": "2025-11-18"
+  },
+  {
+   "doc_id": "sf000109414en_us",
+   "title": "/my/path/file.sh: line 1: export: 'myVariableName': not a valid identifier",
+   "kind": "kb-article",
+   "products": [
+    "all"
+   ],
+   "date": "2025-11-18"
+  },
+  {
+   "doc_id": "sf000109411en_us",
+   "title": "Cannot get property 'href' on null object from any OS deployment into vCloud Director",
+   "kind": "kb-article",
+   "products": [
+    "all"
+   ],
+   "date": "2025-11-18"
+  },
+  {
+   "doc_id": "sd00006756en_us",
+   "title": "HPE Morpheus Enterprise Software Release Notes v8.0.10",
+   "kind": "release-notes",
+   "products": [
+    "enterprise"
+   ],
+   "date": "2025-11-17"
+  },
+  {
+   "doc_id": "sf000109279en_us",
+   "title": "HPE Morpheus VM Essentials - \".local\" domain name resolution issue in HPE Morpheus VM Essentials Manager",
+   "kind": "kb-article",
+   "products": [
+    "vm-essentials"
+   ],
+   "date": "2025-11-11"
+  },
+  {
+   "doc_id": "sf000109274en_us",
+   "title": "HPE Morpheus VM Essentials - Host Start/Stop options are not functional in HPE Morpheus VM Essentials WebUI",
+   "kind": "kb-article",
+   "products": [
+    "vm-essentials"
+   ],
+   "date": "2025-11-11"
+  },
+  {
+   "doc_id": "sd00006166en_us",
+   "title": "HPE Storage Integration Pack for VM Essentials 8.0.6 Release Notes",
+   "kind": "release-notes",
+   "products": [
+    "vm-essentials"
+   ],
+   "date": "2025-10-15"
+  },
+  {
+   "doc_id": "sd00006976en_us",
+   "title": "HPE Storage Integration Pack for VM Essentials 8.0.10 Release Notes",
+   "kind": "release-notes",
+   "products": [
+    "vm-essentials"
+   ],
+   "date": "2025-10-13"
+  },
+  {
+   "doc_id": "sf000108725en_us",
+   "title": "Unexpected Behavior in HPE Morpheus VM Essentials Clusters Caused by apt-daily-upgrade.service",
+   "kind": "kb-article",
+   "products": [
+    "vm-essentials"
+   ],
+   "date": "2025-10-09"
+  },
+  {
+   "doc_id": "sd00006768en_us",
+   "title": "HPE Morpheus VM Essentials Software Release Notes v8.0.10",
+   "kind": "release-notes",
+   "products": [
+    "vm-essentials"
+   ],
+   "date": "2025-09-30"
+  },
+  {
+   "doc_id": "sd00006691en_us",
+   "title": "HPE Morpheus VM Essentials Software Documentation v8.0.9",
+   "kind": "documentation",
+   "products": [
+    "vm-essentials"
+   ],
+   "date": "2025-09-23"
+  },
+  {
+   "doc_id": "sd00006670en_us",
+   "title": "HPE Morpheus Enterprise Software Documentation v8.0.9",
+   "kind": "documentation",
+   "products": [
+    "enterprise"
+   ],
+   "date": "2025-09-23"
+  },
+  {
+   "doc_id": "sd00006560en_us",
+   "title": "HPE Morpheus VM Essentials Software Documentation v8.0.8",
+   "kind": "documentation",
+   "products": [
+    "vm-essentials"
+   ],
+   "date": "2025-09-23"
+  },
+  {
+   "doc_id": "sd00006474en_us",
+   "title": "HPE Morpheus Enterprise Software Documentation v8.0.8",
+   "kind": "documentation",
+   "products": [
+    "enterprise"
+   ],
+   "date": "2025-09-23"
+  },
+  {
+   "doc_id": "sd00006678en_us",
+   "title": "HPE Morpheus VM Essentials Release Notes v8.0.9",
+   "kind": "release-notes",
+   "products": [
+    "vm-essentials"
+   ],
+   "date": "2025-09-01"
+  },
+  {
+   "doc_id": "sd00006660en_us",
+   "title": "HPE Morpheus Enterprise Software Release Notes v8.0.9",
+   "kind": "release-notes",
+   "products": [
+    "enterprise"
+   ],
+   "date": "2025-09-01"
+  },
+  {
+   "doc_id": "dp00006697en_us",
+   "title": "HPE Reference Architecture for HPE Morpheus VM Essentials Software 8.0.7 HPE Synergy 480 Gen11 Compute Module and HPE Alletra Storage MP B10000-iSCSI",
+   "kind": "guide",
+   "products": [
+    "vm-essentials"
+   ],
+   "date": "2025-08-28"
+  },
+  {
+   "doc_id": "sd00006563en_us",
+   "title": "HPE Storage Integration Pack for VM Essentials 8.0.8 Release Notes",
+   "kind": "release-notes",
+   "products": [
+    "vm-essentials"
+   ],
+   "date": "2025-08-25"
+  },
+  {
+   "doc_id": "sd00006540en_us",
+   "title": "HPE Morpheus VM Essentials Software Release Notes v8.0.8",
+   "kind": "release-notes",
+   "products": [
+    "vm-essentials"
+   ],
+   "date": "2025-07-29"
+  },
+  {
+   "doc_id": "sd00006495en_us",
+   "title": "HPE Morpheus Enterprise Software Release Notes v8.0.8",
+   "kind": "release-notes",
+   "products": [
+    "enterprise"
+   ],
+   "date": "2025-07-26"
+  },
+  {
+   "doc_id": "sd00006472en_us",
+   "title": "HPE Morpheus VM Essentials Software Documentation v8.0.7",
+   "kind": "documentation",
+   "products": [
+    "vm-essentials"
+   ],
+   "date": "2025-07-25"
+  },
+  {
+   "doc_id": "sd00006470en_us",
+   "title": "HPE Morpheus VM Essentials Software Release Notes v8.0.7",
+   "kind": "release-notes",
+   "products": [
+    "vm-essentials"
+   ],
+   "date": "2025-07-06"
+  },
+  {
+   "doc_id": "sd00006465en_us",
+   "title": "HPE Morpheus VM Essentials Software Release Notes v8.0.6",
+   "kind": "release-notes",
+   "products": [
+    "vm-essentials"
+   ],
+   "date": "2025-06-28"
+  },
+  {
+   "doc_id": "sd00006464en_us",
+   "title": "HPE Morpheus Enterprise Software Release Notes v8.0.7",
+   "kind": "release-notes",
+   "products": [
+    "enterprise"
+   ],
+   "date": "2025-06-28"
+  },
+  {
+   "doc_id": "sd00006454en_us",
+   "title": "HPE Morpheus VM Essentials Software Documentation v8.0.6",
+   "kind": "documentation",
+   "products": [
+    "vm-essentials"
+   ],
+   "date": "2025-06-28"
+  },
+  {
+   "doc_id": "sd00006453en_us",
+   "title": "HPE Morpheus Enterprise Software Documentation v8.0.7",
+   "kind": "documentation",
+   "products": [
+    "enterprise"
+   ],
+   "date": "2025-06-27"
+  },
+  {
+   "doc_id": "dp00006372en_us",
+   "title": "HPE Reference Architecture for HPE Morpheus VM Essentials Software 8.0.5 HPE ProLiant Servers and HPE Alletra Storage MP B10000-Fibre Channel",
+   "kind": "guide",
+   "products": [
+    "vm-essentials"
+   ],
+   "date": "2025-06-18"
+  },
+  {
+   "doc_id": "dp00005420en_us",
+   "title": "HPE Reference Architecture for HPE VM Essentials Software 8.0.4 HPE ProLiant Servers and HPE Alletra Storage MP B10000-iSCSI",
+   "kind": "guide",
+   "products": [
+    "vm-essentials"
+   ],
+   "date": "2025-05-06"
+  },
+  {
+   "doc_id": "dp00006095en_us",
+   "title": "HPE Morpheus Enterprise Software Overview",
+   "kind": "guide",
+   "products": [
+    "enterprise"
+   ],
+   "date": "2025-04-29"
+  },
+  {
+   "doc_id": "dp00006094en_us",
+   "title": "HPE Morpheus Enterprise Software Reference Architecture",
+   "kind": "guide",
+   "products": [
+    "enterprise"
+   ],
+   "date": "2025-04-29"
+  }
+ ]
+}

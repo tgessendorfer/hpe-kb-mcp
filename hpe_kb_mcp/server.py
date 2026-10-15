@@ -29,6 +29,7 @@ from mcp.server.mcpserver import MCPServer
 from mcp.types import ToolAnnotations
 
 from . import __version__
+from .catalog import KINDS, PRODUCTS, find_documents, load_catalog
 from .client import AuthenticationRequired, HpeKbClient, HpeKbError, normalise_doc_id
 from .releases import latest_release
 
@@ -46,9 +47,10 @@ mcp = MCPServer(
         "Use these tools instead of fetching support.hpe.com URLs directly: the "
         "docDisplay viewer is JavaScript-rendered, so a plain web fetch of one of "
         "those URLs returns an empty page with no document text.\n\n"
-        "A good pattern for questions about HPE products: find the document with web "
-        "search (HPE documents are indexed publicly and results carry a docId), then "
-        "read it here. For what is actually installed on the appliance, use the "
+        "A good pattern for questions about HPE Morpheus: find the document id with "
+        "find_hpe_document (a shipped catalog of public Morpheus documents), then read "
+        "it with get_hpe_document. For other HPE products, or when the catalog has no "
+        "match, find the docId with one narrow web search on support.hpe.com. For what is actually installed on the appliance, use the "
         "Morpheus tools - this server only knows what HPE has published."
     ),
 )
@@ -165,6 +167,51 @@ def search_hpe_kb(query: str, max_results: int = 10) -> dict:
 
 
 @mcp.tool(annotations=READ_ONLY)
+def find_hpe_document(
+    query: str = "",
+    product: str | None = None,
+    kind: str | None = None,
+    max_results: int = 15,
+) -> dict:
+    """Find HPE Morpheus documents by title, without a login or web search.
+
+    Searches a catalog shipped with this server: the public documents the HPE
+    Support Center lists for HPE Morpheus Software (Enterprise, Advanced, VM
+    Essentials, HVM, Central) - release notes, documentation sets, reference
+    architectures and guides, advisories, notices, security bulletins and
+    knowledge articles. Every word of `query` must appear in the title (word
+    prefixes match, so "9.1" finds "9.1.0"). Newest first.
+
+    `product`: enterprise, advanced, vm-essentials, cloudops (older Morpheus
+    knowledge articles). `kind`: release-notes, documentation, guide, advisory,
+    notice, bulletin, kb-article.
+
+    Each hit has a `doc_id`; read it with `get_hpe_document`. The catalog is a
+    snapshot (see `snapshot`), so a document published after it is missing:
+    only then run one narrow web search on support.hpe.com for its docId.
+    """
+    if product and product not in PRODUCTS:
+        return {"error": "invalid_argument",
+                "detail": f"product must be one of {', '.join(PRODUCTS)}"}
+    if kind and kind not in KINDS:
+        return {"error": "invalid_argument",
+                "detail": f"kind must be one of {', '.join(KINDS)}"}
+    try:
+        catalog = load_catalog()
+    except (OSError, ValueError) as exc:
+        return {"error": "unavailable", "detail": str(exc)}
+    hits = find_documents(catalog, query, product=product, kind=kind,
+                          max_results=min(max(max_results, 1), 50))
+    return {
+        "query": query,
+        "snapshot": catalog.get("snapshot"),
+        "results": [dict(doc, url=client().viewer_url(doc["doc_id"])) for doc in hits],
+        "note": ("Catalog snapshot of public HPE Morpheus documents; read a hit with "
+                 "get_hpe_document. No hit: try fewer or other words before a web search."),
+    }
+
+
+@mcp.tool(annotations=READ_ONLY)
 def get_latest_morpheus_release(product: str = "morpheus-enterprise") -> dict:
     """Report the newest HPE Morpheus release this server knows about.
 
@@ -179,7 +226,8 @@ def get_latest_morpheus_release(product: str = "morpheus-enterprise") -> dict:
     pages. The appliance's own build version comes from the Morpheus tools,
     not this one.
 
-    `product` is `morpheus-enterprise` or `morpheus-vm-essentials`.
+    `product` is `morpheus-enterprise`, `morpheus-advanced` or
+    `morpheus-vm-essentials`.
     """
     newest, known, problems = latest_release(client(), product)
     if not newest:

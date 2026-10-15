@@ -39,6 +39,8 @@ DEFAULT_DOCUMENTS: list[dict] = [
     {"product": "morpheus-enterprise", "doc_id": "dp00008463en_us"},  # 9.0.2
     {"product": "morpheus-enterprise", "doc_id": "sd00008269en_us"},  # 9.0.1
     {"product": "morpheus-enterprise", "doc_id": "sd00006660en_us"},  # 8.0.9
+    {"product": "morpheus-advanced", "doc_id": "sd00008804en_us"},  # 9.1.0
+    {"product": "morpheus-vm-essentials", "doc_id": "sd00008805en_us"},  # 9.1.0
     {"product": "morpheus-vm-essentials", "doc_id": "dp00008462en_us"},  # 9.0.2
     {"product": "morpheus-vm-essentials", "doc_id": "sd00008297en_us"},  # 9.0.1
     {"product": "morpheus-vm-essentials", "doc_id": "sd00008079en_us"},  # 9.0.0
