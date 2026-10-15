@@ -12,17 +12,20 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""A shipped list of public HPE Morpheus documents, searchable by title.
+"""Title search over a local catalog of HPE documents.
 
 HPE's knowledgebase search needs a signed-in account, so an agent without a
 session cookie has no way to go from "the HVM qualification matrix" to a
-document id. This catalog closes that gap for the Morpheus product family: a
-snapshot of the document ids, titles, kinds and dates that the HPE Support
-Center lists for HPE Morpheus Software (all editions), public documents only.
-It holds metadata, never document text; the text is read live with
-``get_hpe_document``.
+document id. A catalog closes that gap: a JSON file of document ids, titles,
+kinds, products and dates that the operator builds and points
+``HPE_KB_CATALOG`` at. It holds metadata, never document text; the text is
+read live with ``get_hpe_document``. No catalog ships with this server.
 
-Point ``HPE_KB_CATALOG`` at your own JSON file (same shape) to replace it.
+Shape::
+
+    {"snapshot": "2026-10-15",
+     "documents": [{"doc_id": "...en_us", "title": "...", "kind": "release-notes",
+                    "products": ["enterprise"], "date": "2026-10-15"}]}
 """
 
 from __future__ import annotations
@@ -30,9 +33,6 @@ from __future__ import annotations
 import json
 import os
 import re
-from pathlib import Path
-
-DEFAULT_CATALOG = Path(__file__).with_name("catalog.json")
 
 KINDS = ("release-notes", "documentation", "guide", "advisory", "notice",
          "bulletin", "kb-article")
@@ -41,8 +41,11 @@ PRODUCTS = ("enterprise", "advanced", "vm-essentials", "all", "cloudops", "other
 _WORD = re.compile(r"[a-z0-9][a-z0-9.\-]*")
 
 
-def load_catalog(path: str | os.PathLike | None = None) -> dict:
-    source = path or os.environ.get("HPE_KB_CATALOG") or DEFAULT_CATALOG
+def load_catalog(path: str | os.PathLike | None = None) -> dict | None:
+    """Load the catalog named by ``path`` or ``HPE_KB_CATALOG``; None if neither is set."""
+    source = path or os.environ.get("HPE_KB_CATALOG")
+    if not source:
+        return None
     with open(source, encoding="utf-8") as handle:
         data = json.load(handle)
     if not isinstance(data, dict) or not isinstance(data.get("documents"), list):

@@ -47,10 +47,10 @@ mcp = MCPServer(
         "Use these tools instead of fetching support.hpe.com URLs directly: the "
         "docDisplay viewer is JavaScript-rendered, so a plain web fetch of one of "
         "those URLs returns an empty page with no document text.\n\n"
-        "A good pattern for questions about HPE Morpheus: find the document id with "
-        "find_hpe_document (a shipped catalog of public Morpheus documents), then read "
-        "it with get_hpe_document. For other HPE products, or when the catalog has no "
-        "match, find the docId with one narrow web search on support.hpe.com. For what is actually installed on the appliance, use the "
+        "A good pattern for questions about HPE products: find the document id with "
+        "find_hpe_document (a local catalog of HPE documents, if one is configured), "
+        "then read it with get_hpe_document. When the catalog has no match or none is "
+        "configured, find the docId with one narrow web search on support.hpe.com. For what is actually installed on the appliance, use the "
         "Morpheus tools - this server only knows what HPE has published."
     ),
 )
@@ -173,14 +173,15 @@ def find_hpe_document(
     kind: str | None = None,
     max_results: int = 15,
 ) -> dict:
-    """Find HPE Morpheus documents by title, without a login or web search.
+    """Find HPE documents by title, without a login or web search.
 
-    Searches a catalog shipped with this server: the public documents the HPE
-    Support Center lists for HPE Morpheus Software (Enterprise, Advanced, VM
-    Essentials, HVM, Central) - release notes, documentation sets, reference
-    architectures and guides, advisories, notices, security bulletins and
-    knowledge articles. Every word of `query` must appear in the title (word
-    prefixes match, so "9.1" finds "9.1.0"). Newest first.
+    Searches the local document catalog this server was configured with -
+    typically the HPE Support Center documents for HPE Morpheus Software
+    (Enterprise, Advanced, VM Essentials, HVM, Central): release notes,
+    documentation sets, reference architectures and guides, advisories,
+    notices, security bulletins and knowledge articles. Every word of `query`
+    must appear in the title (word prefixes match, so "9.1" finds "9.1.0").
+    Newest first.
 
     `product`: enterprise, advanced, vm-essentials, cloudops (older Morpheus
     knowledge articles). `kind`: release-notes, documentation, guide, advisory,
@@ -200,14 +201,19 @@ def find_hpe_document(
         catalog = load_catalog()
     except (OSError, ValueError) as exc:
         return {"error": "unavailable", "detail": str(exc)}
+    if catalog is None:
+        return {"error": "no_catalog",
+                "detail": "This server has no document catalog configured (HPE_KB_CATALOG).",
+                "suggestion": ("Run one narrow web search restricted to support.hpe.com to find "
+                               "the docId, then call get_hpe_document with it.")}
     hits = find_documents(catalog, query, product=product, kind=kind,
                           max_results=min(max(max_results, 1), 50))
     return {
         "query": query,
         "snapshot": catalog.get("snapshot"),
         "results": [dict(doc, url=client().viewer_url(doc["doc_id"])) for doc in hits],
-        "note": ("Catalog snapshot of public HPE Morpheus documents; read a hit with "
-                 "get_hpe_document. No hit: try fewer or other words before a web search."),
+        "note": ("Catalog snapshot; read a hit with get_hpe_document. No hit: try fewer "
+                 "or other words before a web search."),
     }
 
 

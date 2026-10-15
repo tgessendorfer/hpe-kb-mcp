@@ -12,9 +12,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-"""Offline tests for the shipped document catalog and its title search."""
+"""Offline tests for the document catalog and its title search."""
 
+import json
+import os
+import tempfile
 import unittest
+from unittest import mock
 
 from hpe_kb_mcp.catalog import KINDS, PRODUCTS, find_documents, load_catalog
 
@@ -51,20 +55,33 @@ class FindDocumentsTests(unittest.TestCase):
         self.assertNotIn("xx00000004en_us", self.ids(product="enterprise"))
 
 
-class ShippedCatalogTests(unittest.TestCase):
+class LoadCatalogTests(unittest.TestCase):
 
-    def test_shipped_catalog_is_well_formed(self):
-        catalog = load_catalog()
-        self.assertTrue(catalog.get("snapshot"))
-        docs = catalog["documents"]
-        self.assertGreater(len(docs), 0)
-        self.assertEqual(len({d["doc_id"] for d in docs}), len(docs))
-        for doc in docs:
-            with self.subTest(doc=doc["doc_id"]):
-                self.assertTrue(doc["doc_id"].endswith("en_us"))
-                self.assertIn(doc["kind"], KINDS)
-                self.assertTrue(set(doc["products"]) <= set(PRODUCTS))
-                self.assertTrue(doc["title"].strip())
+    def test_no_catalog_without_configuration(self):
+        with mock.patch.dict(os.environ, {}, clear=True):
+            self.assertIsNone(load_catalog())
+
+    def test_loads_the_file_named_by_the_environment(self):
+        with tempfile.NamedTemporaryFile("w", suffix=".json", delete=False) as handle:
+            json.dump(dict(CATALOG, snapshot="2026-10-15"), handle)
+        try:
+            with mock.patch.dict(os.environ, {"HPE_KB_CATALOG": handle.name}):
+                catalog = load_catalog()
+        finally:
+            os.unlink(handle.name)
+        self.assertEqual(catalog["snapshot"], "2026-10-15")
+        for doc in catalog["documents"]:
+            self.assertIn(doc["kind"], KINDS)
+            self.assertTrue(set(doc["products"]) <= set(PRODUCTS))
+
+    def test_rejects_a_file_without_documents(self):
+        with tempfile.NamedTemporaryFile("w", suffix=".json", delete=False) as handle:
+            json.dump([], handle)
+        try:
+            with self.assertRaises(ValueError):
+                load_catalog(handle.name)
+        finally:
+            os.unlink(handle.name)
 
 
 if __name__ == "__main__":
